@@ -5,11 +5,18 @@ The team consisting of Jaimin, Tom and Kodarie (Team Leader) will be designing, 
   
   Fields that still need to be done:
   - Skeleton build
+  - Login Screen
+  - Dashboard
+  - Help Page
+  - Help Tutorial
   - Questionnaire function
   - GUI (Front-end)
   - Server connection
   - Idle timer logout
-  - secure login
+  - Secure login
+  
+For more information on the individual Tasks, please look at the Projects section of the repository.
+Add or change tasks using the kanban method!
 
 
-last edited 23.11.2016
+last edited 24.11.2016 (T.V)
