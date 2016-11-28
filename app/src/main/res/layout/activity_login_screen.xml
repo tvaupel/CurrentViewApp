@@ -53,5 +53,6 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/Login_button"
-            android:layout_below="@+id/password" android:layout_alignEnd="@+id/account_txt"/>
+            android:layout_below="@+id/password" android:layout_alignEnd="@+id/account_txt"
+            android:onClick="LogIn"/>
 </RelativeLayout>
