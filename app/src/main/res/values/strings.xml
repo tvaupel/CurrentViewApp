@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Current View App</string>
     <string name="password_txt">Password</string>
+
+    <string name="questionnaire_sort">Choose a country</string>
+
+    <string-array name="questionnaire_sort_by">
+        <item>Sort by: Practitioner First Name A-Z</item>
+        <item>Sort by: Practitioner First Name Z-A</item>
+        <item>Sort by: Patient First Name A-Z</item>
+        <item>Sort by: Patient First Name Z-A</item>
+        <item>Sort by: Date Created Newest First</item>
+        <item>Sort by: Date Created Oldest First</item>
+    </string-array>
+
 </resources>
