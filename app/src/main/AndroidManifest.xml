@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".LoginError">
         </activity>
+        <activity android:name=".PreviousQuestionnaires">
+        </activity>
     </application>
 
 </manifest>

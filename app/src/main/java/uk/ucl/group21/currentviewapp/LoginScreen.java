@@ -11,7 +11,7 @@ import android.widget.EditText;
 public class LoginScreen extends AppCompatActivity {
 
     @XmlRes public EditText acc_number;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
