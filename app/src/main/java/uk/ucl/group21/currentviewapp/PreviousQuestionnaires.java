@@ -9,12 +9,35 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class PreviousQuestionnaires extends AppCompatActivity implements OnItemSelectedListener{
 
+
+    private final static Logger LOGGER = Logger.getLogger(LoginScreen.class.getName());
+    private static FileHandler fileTxt;
+
+    public void setup() throws IOException {
+        LOGGER.setLevel(Level.WARNING);
+        LOGGER.setUseParentHandlers(false);
+        fileTxt = new FileHandler("PrevQuestionnaires_LOG.txt");
+        LOGGER.addHandler(fileTxt);
+    }
+
+
+
     public void onCreate(Bundle savedInstanceState) {
+        try{
+            setup();
+        } catch (IOException ex){
+            LOGGER.log(Level.SEVERE, ex.getStackTrace().toString(), ex);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_previous_questionnaires);
 
@@ -41,6 +64,8 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
 
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
+
+        LOGGER.log(Level.INFO, "Previous Questionnaires Screen has been created");
     }
 
     @Override
