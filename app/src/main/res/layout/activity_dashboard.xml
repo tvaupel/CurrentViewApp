@@ -15,11 +15,42 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Login Complete"
-            android:id="@+id/systemMessage" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+            android:id="@+id/systemMessage" android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"/>
     <Button
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:text="@string/Previous_Questionnaires"
+            android:id="@+id/previousQuestionnairesButton"
+            android:onClick="nextButton"
+            android:layout_marginTop="92dp" android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="false"/>
+    <Button
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:text="@string/New_Questionnaire"
+            android:id="@+id/NewQuestionnaireButton"
+            android:onClick="nextButton"
+            android:layout_marginTop="92dp" android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="true"/>
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="@string/help"
+            android:id="@+id/btnHelp"
+            android:onClick="nextButton"
+            android:layout_marginTop="75dp"
+            android:layout_below="@+id/NewQuestionnaireButton" android:layout_alignEnd="@+id/NewQuestionnaireButton"/>
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Previous Questionnaires"
-            android:id="@+id/previousQuestionnairesButton" android:layout_below="@+id/systemMessage" android:layout_centerHorizontal="true"
-            android:onClick="nextButton"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Username:"
+            android:id="@+id/textView" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+    <Button android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="@string/Setting"
+            android:id="@+id/btnSetting"
+            android:onClick="nextButton"
+            android:layout_alignBottom="@+id/btnHelp" android:layout_alignStart="@+id/previousQuestionnairesButton"/>
 </RelativeLayout>
