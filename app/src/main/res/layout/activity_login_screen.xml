@@ -14,10 +14,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:src="drawable/648404-200.png"
             android:layout_marginTop="40dp"
             android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal" android:layout_alignParentStart="false"/>
+            android:layout_gravity="center_horizontal" android:layout_alignParentStart="false"
+            android:src="@drawable/i_icon"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             android:id="@+id/acc_number"
             android:inputType="text"
             android:layout_marginBottom="40dp"
-            android:layout_alignStart="@+id/password" android:layout_below="@+id/account_txt"/>
+            android:layout_alignStart="@+id/password_input" android:layout_below="@+id/account_txt"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/password"
+            android:id="@+id/password_input"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/password_txt"/>
     <Button
@@ -53,6 +53,6 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/Login_button"
-            android:layout_below="@+id/password" android:layout_alignEnd="@+id/account_txt"
+            android:layout_below="@+id/password_input" android:layout_alignEnd="@+id/account_txt"
             android:onClick="LogIn"/>
 </RelativeLayout>
