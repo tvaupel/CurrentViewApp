@@ -5,6 +5,11 @@
     <string name="questionnaire_sort">Choose a country</string>
     <string name="spinner_title">Spinner</string>
 
+    <string name="Previous_Questionnaires">Previous Questionnaires</string>
+    <string name="New_Questionnaire">New Questionnaire</string>
+    <string name="help">Help</string>
+    <string name="Setting">Setting</string>
+
     <string-array name="questionnaire_sort_by">
         <item>Sort by: Practitioner First Name A-Z</item>
         <item>Sort by: Practitioner First Name Z-A</item>
