@@ -15,11 +15,11 @@
             android:layout_height="wrap_content"
             android:text="Next"
             android:id="@+id/next"
+            android:onClick="nextButton"
             android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Back"
-            android:onClick="nextButton"
             android:id="@+id/back" android:layout_below="@+id/next" android:layout_centerHorizontal="true"/>
 </RelativeLayout>

@@ -16,5 +16,5 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Login Error"
             android:id="@+id/errText" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
-            android:layout_marginTop="224dp" android:textSize="40dp"/>
+            android:layout_marginTop="224dp" android:textSize="40dp" android:textColor="#ff0000"/>
 </RelativeLayout>

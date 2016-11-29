@@ -16,4 +16,10 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Login Complete"
             android:id="@+id/systemMessage" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous Questionnaires"
+            android:id="@+id/previousQuestionnairesButton" android:layout_below="@+id/systemMessage" android:layout_centerHorizontal="true"
+            android:onClick="nextButton"/>
 </RelativeLayout>
