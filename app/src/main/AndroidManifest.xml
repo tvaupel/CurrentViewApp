@@ -23,6 +23,8 @@
         </activity>
         <activity android:name=".PreviousQuestionnaires">
         </activity>
+        <activity android:name=".Setting">
+        </activity>
     </application>
 
 </manifest>

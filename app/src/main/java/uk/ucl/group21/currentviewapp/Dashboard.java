@@ -15,11 +15,24 @@ public class Dashboard extends AppCompatActivity {
 
     }
 
-    protected void nextButton(View view){
+    protected void btnNewQuestion(View view){
         Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
         startActivity(intent);
     }
 
+    protected void btnPrevQuestion(View view){
+        Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
+        startActivity(intent);
+    }
 
+    protected void btnHelp(View view){
+        Intent intent = new Intent(this, Help.class); //opens the Help Activity
+        startActivity(intent);
+    }
+
+    protected void btnSetting(View view){
+        Intent intent = new Intent(this, Setting.class); //opens the Setting Activity
+        startActivity(intent);
+    }
 
 }
