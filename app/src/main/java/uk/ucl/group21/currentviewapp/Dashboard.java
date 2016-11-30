@@ -16,36 +16,37 @@ public class Dashboard extends AppCompatActivity {
     }
 
     // Button activity for Questionnaire Menu (generate new Questionnaire)
-    protected void btnNewQuestion(View view){
+    public void btnNewQuestion(View view){
         Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
         startActivity(intent);
     }
 
     // Button activity for previous Questionnaires
-    protected void btnPrevQuestion(View view){
+    public void btnPrevQuestion(View view){
         Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
         startActivity(intent);
     }
 
     // Button activity for opening the Help page
-    protected void btnHelp(View view){
+    public void btnHelp(View view){
         Intent intent = new Intent(this, Help.class); //opens the Help Activity
         startActivity(intent);
     }
 
     // Button activity for directing to settings
     // Can also be discarded when no changeable settings are included.
-    protected void btnSetting(View view){
+    public void btnSetting(View view){
         Intent intent = new Intent(this, Setting.class); //opens the Setting Activity
         startActivity(intent);
     }
-    
+
+    /*
      public void newQuestionnaire(View v){
 
         Intent newQuestionnaire = new Intent(this, DatabaseMainActivity.class); //opens the DatabaseMainActivity
         startActivity(newQuestionnaire);
 
     }
-
+*/
 
 }
