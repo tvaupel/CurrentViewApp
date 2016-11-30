@@ -14,7 +14,7 @@ public class QuestionnaireMenu extends AppCompatActivity {
     }
 
     protected void nextButton(View view){
-        Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Dashboard Activity
+        Intent intent = new Intent(this, Q1ToQ10.class); //opens the Dashboard Activity
         startActivity(intent);
 
     }

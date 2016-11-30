@@ -9,13 +9,14 @@
     <string name="New_Questionnaire">New Questionnaire</string>
     <string name="help">Help</string>
     <string name="Setting">Setting</string>
-    <string name="Empty"/>
+    <string name="Empty">____</string>
     <string name="Provisional_Problem_Description">Provisional Problem Description</string>
     <string name="None">None</string>
     <string name="Mild">Mild</string>
     <string name="Moderate">Moderate</string>
     <string name="Severe">Severe</string>
     <string name="Not_Known">Not Known</string>
+    <string name="anxious_away_from_caregivers">Anxious away from caregivers</string>
 
     <string-array name="questionnaire_sort_by">
         <item>Sort by: Practitioner First Name A-Z</item>
