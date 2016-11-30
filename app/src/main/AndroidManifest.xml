@@ -15,15 +15,33 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard">
+        <activity
+                android:name=".Dashboard"
+                android:label="Dashboard">
         </activity>
-        <activity android:name=".QuestionnaireMenu">
+        <activity
+                android:name=".QuestionnaireMenu"
+                android:label="Questionnaire Menu">
         </activity>
-        <activity android:name=".LoginError">
+        <activity
+                android:name=".LoginError"
+                android:label="Login Error">
         </activity>
-        <activity android:name=".PreviousQuestionnaires">
+        <activity
+                android:name=".PreviousQuestionnaires"
+                android:label="Previous Questionnaires">
         </activity>
-        <activity android:name=".Setting">
+        <activity
+                android:name=".Setting"
+                android:label="Setting">
+        </activity>
+        <activity
+                android:name=".Help"
+                android:label="Help">
+        </activity>
+        <activity
+                android:name=".Q1ToQ10"
+                android:label="Questions 1-10">
         </activity>
     </application>
 
