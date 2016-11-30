@@ -39,5 +39,13 @@ public class Dashboard extends AppCompatActivity {
         Intent intent = new Intent(this, Setting.class); //opens the Setting Activity
         startActivity(intent);
     }
+    
+     public void newQuestionnaire(View v){
+
+        Intent newQuestionnaire = new Intent(this, DatabaseMainActivity.class); //opens the DatabaseMainActivity
+        startActivity(newQuestionnaire);
+
+    }
+
 
 }
