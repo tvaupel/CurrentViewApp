@@ -31,11 +31,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/New_Questionnaire"
-            android:id="@+id/NewQuestionnaireButton"
-            android:onClick="btnNewQuestion"
+            //android:id="@+id/NewQuestionnaireButton"  
+            android:id="@+id/newQuetionnaire"
+            //android:onClick="btnNewQuestion"
+            android:onClick="newQuestionnaire"
             android:layout_marginTop="92dp"
             android:layout_alignParentEnd="false"
             android:layout_alignParentStart="true"/>
+        
+        
+
+        
+        
     <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
