@@ -23,7 +23,7 @@ public class LoginScreen extends AppCompatActivity {
 
     }
 
-    protected void LogIn(View view){
+    public void LogIn(View view){
 
         EditText accNumber = (EditText) findViewById(R.id.acc_number);
         EditText passwordInput = (EditText) findViewById(R.id.password_input);
@@ -38,12 +38,9 @@ public class LoginScreen extends AppCompatActivity {
                 Intent intent = new Intent(this, LoginError.class); //opens the Error Screen Activity
                 startActivity(intent);
             }
-        }
-        catch(Exception e) {
+        } catch(Exception e) {
             e.printStackTrace();
         }
-
-
     }
 
 }

@@ -13,7 +13,7 @@ public class QuestionnaireMenu extends AppCompatActivity {
         setContentView(R.layout.activity_questionnaire_menu);
     }
 
-    protected void nextButton(View view){
+    public void nextButton(View view){
         Intent intent = new Intent(this, Q1ToQ10.class); //opens the Dashboard Activity
         startActivity(intent);
 
