@@ -23,16 +23,6 @@
             android:text="Back"
             android:id="@+id/back"
             android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/next"/>
-
-    <TextView
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/buttonQM1OV"
-        android:layout_alignStart="@+id/buttonQM1OV"
-        android:layout_marginStart="104dp"
-        android:id="@+id/textView3" />
-
     <Button
         android:text="Start With OVERVIEW"
         android:layout_width="wrap_content"
