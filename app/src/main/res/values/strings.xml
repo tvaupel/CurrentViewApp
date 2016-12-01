@@ -26,5 +26,7 @@
         <item>Sort by: Date Created Newest First</item>
         <item>Sort by: Date Created Oldest First</item>
     </string-array>
+    <string name="title_activity_database_main">DatabaseMainActivity</string>
+    <string name="title_activity_questionnaire__overview">Questionnaire_Overview</string>
 
 </resources>

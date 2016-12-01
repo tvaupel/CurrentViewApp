@@ -11,7 +11,7 @@ public class Dashboard extends AppCompatActivity {
     // change test for git commit
 
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,7 @@ public class Dashboard extends AppCompatActivity {
 
     // Button activity for directing to settings
     // Can also be discarded when no changeable settings are included.
+
     public void btnSetting(View view){
         Intent intent = new Intent(this, Setting.class); //opens the Setting Activity
         startActivity(intent);
