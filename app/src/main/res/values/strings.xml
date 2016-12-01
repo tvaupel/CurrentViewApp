@@ -7,6 +7,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <!--Strings used for the Dashboard -->
+    <string name="Username">Username:</string>
+
 
     <!--Strings used for the Questionnaire Questions -->
     <string name="Previous_Questionnaires">Previous Questionnaires</string>
