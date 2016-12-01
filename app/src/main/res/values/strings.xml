@@ -2,9 +2,13 @@
     <string name="app_name">Current View App</string>
     <string name="password_txt">Password</string>
 
-    <string name="questionnaire_sort">Choose a country</string>
-    <string name="spinner_title">Spinner</string>
+    <!--Strings used for the Navigation bar -->
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
 
+    <!--Strings used for the Questionnaire Questions -->
     <string name="Previous_Questionnaires">Previous Questionnaires</string>
     <string name="New_Questionnaire">New Questionnaire</string>
     <string name="help">Help</string>
@@ -18,6 +22,10 @@
     <string name="Not_Known">Not Known</string>
     <string name="anxious_away_from_caregivers">Anxious away from caregivers</string>
 
+
+    <!--Strings used for the Sorting Spinner in Previous Questionnaires-->
+    <string name="questionnaire_sort">Choose a country</string>
+    <string name="spinner_title">Spinner</string>
     <string-array name="questionnaire_sort_by">
         <item>Sort by: Practitioner First Name A-Z</item>
         <item>Sort by: Practitioner First Name Z-A</item>
@@ -26,5 +34,6 @@
         <item>Sort by: Date Created Newest First</item>
         <item>Sort by: Date Created Oldest First</item>
     </string-array>
+
 
 </resources>
