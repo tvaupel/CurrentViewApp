@@ -72,17 +72,20 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_dashboard) {
+            Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
+            startActivity(intent);
+        } else if (id == R.id.nav_new_questionnaire) {
+            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
+            startActivity(intent);
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_previous_questionnaire) {
+            Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
+            startActivity(intent);
+        } else if (id == R.id.nav_help) {
+            Intent intent = new Intent(this, Help.class); //opens the Help Activity
+            startActivity(intent);
+        } else if (id == R.id.nav_logout) {
 
         }
 
