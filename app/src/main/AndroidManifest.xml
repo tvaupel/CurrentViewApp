@@ -18,28 +18,27 @@
         <activity
                 android:name=".Dashboard"
                 android:label="Dashboard"
-                android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+                android:theme="@style/AppTheme.NoActionBar"/>
         <activity
                 android:name=".QuestionnaireMenu"
-                android:label="Questionnaire Menu">
-        </activity>
+                android:label="Questionnaire Menu"/>
+
         <activity
                 android:name=".LoginError"
-                android:label="Login Error">
-        </activity>
+                android:label="Login Error"/>
+
         <activity
                 android:name=".PreviousQuestionnaires"
-                android:label="Previous Questionnaires">
-        </activity>
+                android:label="Previous Questionnaires"/>
+
         <activity
                 android:name=".Setting"
-                android:label="Setting">
-        </activity>
+                android:label="Setting"/>
+
         <activity
                 android:name=".Help"
-                android:label="Help">
-        </activity>
+                android:label="Help"/>
+
         <activity
                 android:name=".Q1ToQ10"
                 android:label="Questions 1-10">

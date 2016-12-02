@@ -8,23 +8,23 @@
                 android:title="Dashboard"/>
         <item
                 android:id="@+id/nav_new_questionnaire"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@android:drawable/ic_menu_edit"
                 android:title="@string/New_Questionnaire"/>
         <item
                 android:id="@+id/nav_previous_questionnaire"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@android:drawable/ic_input_get"
                 android:title="@string/Previous_Questionnaires"/>
         <item
                 android:id="@+id/nav_help"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@android:drawable/ic_menu_help"
                 android:title="@string/help"/>
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="">
         <menu>
             <item
                     android:id="@+id/nav_logout"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@android:drawable/ic_secure"
                     android:title="@string/logout"/>
         </menu>
     </item>
