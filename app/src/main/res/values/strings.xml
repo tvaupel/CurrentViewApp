@@ -11,9 +11,12 @@
 
     <!--Strings used for the Dashboard -->
     <string name="Username">Username:</string>
-
+    <string name="Next">Next</string>
+    <string name="Back">Back</string>
 
     <!--Strings used for the Questionnaire Questions -->
+    <string name="section_by_section">Section By Section</string>
+    <string name="overview">Overview</string>
     <string name="Previous_Questionnaires">Previous Questionnaires</string>
     <string name="New_Questionnaire">New Questionnaire</string>
     <string name="help">Help</string>
@@ -39,6 +42,4 @@
         <item>Sort by: Date Created Newest First</item>
         <item>Sort by: Date Created Oldest First</item>
     </string-array>
-
-
 </resources>
