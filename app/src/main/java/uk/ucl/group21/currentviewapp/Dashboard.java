@@ -59,7 +59,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.logout) {
             return true;
         }
 
@@ -122,13 +122,5 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         startActivity(intent);
     }
 
-    /*
-     public void newQuestionnaire(View v){
-
-        Intent newQuestionnaire = new Intent(this, DatabaseMainActivity.class); //opens the DatabaseMainActivity
-        startActivity(newQuestionnaire);
-
-    }
-*/
 
 }
