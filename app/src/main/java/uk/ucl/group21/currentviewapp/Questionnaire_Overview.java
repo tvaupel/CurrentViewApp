@@ -13,6 +13,7 @@ public class Questionnaire_Overview extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_questionnaire__overview);}
 
     public void btnBkToDashboard(View view) {

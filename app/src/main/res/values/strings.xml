@@ -66,4 +66,7 @@
     <string name="title_activity_q38to_q44">Q38toQ44</string>
     <string name="title_activity_q45_to_q50">Q45ToQ50</string>
 
+    <string name="action_settings">action settings</string>
+
+
 </resources>
