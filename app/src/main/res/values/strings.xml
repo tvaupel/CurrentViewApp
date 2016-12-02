@@ -13,22 +13,55 @@
     <string name="Username">Username:</string>
 
 
+
+
     <!--Strings used for the Questionnaire Questions -->
     <string name="Previous_Questionnaires">Previous Questionnaires</string>
     <string name="New_Questionnaire">New Questionnaire</string>
     <string name="help">Help</string>
     <string name="Setting">Setting</string>
     <string name="Empty">____</string>
-    <string name="Provisional_Problem_Description">Provisional Problem Description</string>
+    <string name="PROVISIONAL_PROBLEM_DESCRIPTION">PROVISIONAL PROBLEM DESCRIPTION</string>
     <string name="None">None</string>
     <string name="Mild">Mild</string>
     <string name="Moderate">Moderate</string>
     <string name="Severe">Severe</string>
     <string name="Not_Known">Not Known</string>
-    <string name="anxious_away_from_caregivers">Anxious away from caregivers</string>
+    <string name="q1">Anxious away from caregivers(Separation anxiety)</string>
+    <string name="q2">Anxious in social situations(Social anxiety/phobia)</string>
+    <string name="q3">Anxious generally (Generalized anxiety)</string>
+    <string name="q4">Anxious in social situations</string>
+    <string name="q11">Extreme of mood(Biopolar disorder)</string>
+    <string name="q12">Delusional beliefs and hallucinations (Psychosis)</string>
+    <string name="q13">Drugs and alcohol difficulties(Substance abuse) </string>
+    <string name="q14">Difficulties sitting still or concentrating(ADHD/Hyperactivity)</string>
+    <string name="q21">Family relationship difficulties</string>
+    <string name="q22">Problems in attachment to parent/carer(Attachment problems)</string>
+    <string name="q23">Peer relationship difficulties</string>
+    <string name="q24">Persistent difficulties managing relationships with others(includes emerging personality disorder)</string>
+    <string name="q31">Looked after child</string>
+    <string name="q32">Young carer status</string>
+    <string name="q33">Learning disability</string>
+    <string name="q34">Serious physical health issues(including chronic fatigue</string>
+    <string name="q38">Deemed "child in need" of social service input</string>
+    <string name="q39">Refugee or asylum seeker</string>
+    <string name="q40">Experience of war,torture or trafficking</string>
+    <string name="q41">Experience of abuse or neglect</string>
+    <string name="NEXT">NEXT</string>
+    <string name="DONE">DONE</string>
 
+    <string name="SELECTED_COMPLEXITY_FACTORS">SELECTED COMPLEXITY FACTORS</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="CONTEXTUAL_PROBLEMS">CONTEXTUAL PROBLEMS</string>
+    <string name="SCHOOL_WORK_or_TRAINING">SCHOOL,WORK or TRAINING</string>
+    <string name="HOME">HOME</string>
+    <string name="COMMUNITY">COMMUNITY</string>
+    <string name="SERVICE_ENGAGEMENT">SERVICE ENGAGEMENT</string>
+    <string name="EDUCATION_EMPLOYMENT_TRAINING">EDUCATION/EMPLOYMENT/TRAINING</string>
+    <string name="ATTENDANCE_DIFFICULTIES">ATTENDANCE DIFFICULTIES</string>
+    <string name="ATTAINMENT_DIFFICULTIES">ATTAINMENT ENGAGEMENT</string>
 
-    <!--Strings used for the Sorting Spinner in Previous Questionnaires-->
     <string name="questionnaire_sort">Choose a country</string>
     <string name="spinner_title">Spinner</string>
     <string-array name="questionnaire_sort_by">
@@ -39,6 +72,15 @@
         <item>Sort by: Date Created Newest First</item>
         <item>Sort by: Date Created Oldest First</item>
     </string-array>
+    <string name="title_activity_database_main">Database Main Activity</string>
+    <string name="title_activity_questionnaire__overview">Questionnaire Overview</string>
+    <string name="title_activity_q11to20">Q11to20</string>
+    <string name="title_activity_q21to30">Q21to30</string>
+    <string name="title_activity_q31to_q37">Q31toQ37</string>
+    <string name="title_activity_q38to_q44">Q38toQ44</string>
+    <string name="title_activity_q45_to_q50">Q45ToQ50</string>
+
+
 
 
 </resources>

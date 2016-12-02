@@ -23,4 +23,26 @@
             android:text="Back"
             android:id="@+id/back"
             android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/next"/>
+
+    <Button
+        android:text="START WITH SECTION BY SECTION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/btnQM2SBS"
+        android:onClick="btnQM2SBS"
+        android:layout_marginTop="78dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:text="Start With OVERVIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:id="@+id/btnQM1OV"
+        android:onClick="btnQM1OV"
+        android:textSize="24sp"
+        android:layout_below="@+id/btnQM2SBS"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

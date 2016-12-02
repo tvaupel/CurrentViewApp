@@ -1,8 +1,23 @@
 <resources>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/Tom_working
+=======
+>>>>>>> origin/master
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <item name="android:statusBarColor">@android:color/transparent</item>
+=======
         <item name="android:statusBarColor">@android:color/background_dark</item>
+>>>>>>> origin/Tom_working
+=======
+        <item name="android:statusBarColor">@android:color/background_dark</item>
+>>>>>>> origin/master
     </style>
 </resources>
