@@ -38,12 +38,26 @@
             android:label="Questions 1-10" />
         <activity
             android:name=".DatabaseMainActivity"
-            android:label="@string/title_activity_database_main"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/title_activity_database_main"/>
         <activity
             android:name=".Questionnaire_Overview"
-            android:label="@string/title_activity_questionnaire__overview"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="Questionnaire Overview" />
+        <activity
+            android:name=".Q11ToQ20"
+            android:label="Questions 11-20" />
+
+        <activity
+            android:name=".Q21ToQ30"
+            android:label="Questions 21-30" />
+        <activity
+            android:name=".Q31ToQ37"
+            android:label="Questions 31-37" />
+        <activity
+            android:name=".Q38ToQ44"
+            android:label="Questions 38-44" />
+        <activity
+            android:name=".Q45ToQ50"
+            android:label="Questions 45-50" />
     </application>
 
 </manifest>

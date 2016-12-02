@@ -13,11 +13,6 @@ public class QuestionnaireMenu extends AppCompatActivity {
         setContentView(R.layout.activity_questionnaire_menu);
     }
 
-    public void nextButton(View view){
-        Intent intent = new Intent(this, Q1ToQ10.class); //opens the Dashboard Activity
-        startActivity(intent);
-
-    }
     // Button activity for Section by Section page
     public void btnQM2SBS(View view){
         Intent intent = new Intent(this, DatabaseMainActivity.class); //opens the Help Activity

@@ -8,17 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class Questionnaire_Overview extends AppCompatActivity {
+public class Q21ToQ30 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questionnaire__overview);}
+        setContentView(R.layout.activity_q21to30);}
 
-    public void btnBkToDashboard(View view) {
-        Intent intent = new Intent(this, Dashboard.class); //opens the Setting Activity
+
+    public void btnNextQ21to30(View view) {
+        Intent intent = new Intent(this, Q31ToQ37.class); //opens the Setting Activity
         startActivity(intent);
     }
-    }
-
-
+}
