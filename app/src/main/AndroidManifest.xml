@@ -21,7 +21,8 @@
                 android:theme="@style/AppTheme.NoActionBar"/>
         <activity
                 android:name=".QuestionnaireMenu"
-                android:label="Questionnaire Menu"/>
+                android:label="Questionnaire Menu"
+                android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".LoginError"
