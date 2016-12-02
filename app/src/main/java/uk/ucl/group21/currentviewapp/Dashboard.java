@@ -71,10 +71,10 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         if (id == R.id.nav_dashboard) {
-            Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
-            startActivity(intent);
+            drawer.closeDrawer(GravityCompat.START);
 
         } else if (id == R.id.nav_new_questionnaire) {
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
@@ -92,7 +92,6 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
