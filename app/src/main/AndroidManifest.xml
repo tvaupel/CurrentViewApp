@@ -33,6 +33,9 @@
         <activity
             android:name=".Help"
             android:label="Help" />
+                android:theme="@style/AppTheme.NoActionBar"/>
+
+
         <activity
             android:name=".Q1ToQ10"
             android:label="Questions 1-10" />
