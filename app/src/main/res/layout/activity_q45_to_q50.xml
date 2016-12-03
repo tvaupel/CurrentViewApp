@@ -10,13 +10,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="uk.ucl.group21.currentviewapp.Q1ToQ10">
+    tools:context="uk.ucl.group21.currentviewapp.Q45ToQ50">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical|horizontal"
-        android:fillViewport="true" android:layout_marginLeft="0dp"
+        android:fillViewport="true" android:layout_marginStart="0dp"
         android:layout_alignParentTop="true" android:layout_alignParentStart="true">
 
         <TableLayout
@@ -40,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/PROVISIONAL_PROBLEM_DESCRIPTION"
+                    android:text="@string/CONTEXTUAL_PROBLEMS"
                     android:textStyle="bold"
                     android:layout_column="2"
                     android:layout_weight="2"
@@ -126,7 +126,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/q1"
+                    android:text="@string/HOME"
                     android:id="@+id/textView2"
                     android:layout_column="2"
                     android:layout_weight="2"
@@ -189,7 +189,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/q2"
+                    android:text="@string/SCHOOL_WORK_or_TRAINING"
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2"/>
@@ -248,7 +248,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/q3"
+                    android:text="@string/COMMUNITY"
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2"/>
@@ -313,7 +313,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/q4"
+                    android:text="@string/SERVICE_ENGAGEMENT"
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2"/>
@@ -358,9 +358,213 @@
                     android:layout_weight="1"
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="10dp"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Empty"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/EDUCATION_EMPLOYMENT_TRAINING"
+                    android:textStyle="bold"
+                    android:layout_column="2"
+                    android:layout_weight="2"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/None"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal" android:minWidth="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Mild"
+                    android:layout_column="4"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal" android:minWidth="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Moderate"
+                    android:layout_column="5"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Severe"
+                    android:layout_column="6"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal" android:minWidth="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Not_Known"
+                    android:layout_column="7"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="1"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textAlignment="center" android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/ATTENDANCE_DIFFICULTIES"
+                    android:layout_column="2"
+                    android:layout_weight="2"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton49.1"
+                    android:layout_column="3"
+                    android:textAlignment="center"
+                    android:layout_weight="1" android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton49.2"
+                    android:layout_column="4"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton49.3"
+                    android:layout_column="5"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton49.4"
+                    android:layout_column="6"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton49.5"
+                    android:layout_column="7"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp" android:layout_gravity="center_horizontal"
+                    android:width="10dp"/>
 
             </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:textAlignment="center" android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/ATTAINMENT_DIFFICULTIES"
+                    android:layout_column="2"
+                    android:textSize="18sp"
+                    android:layout_weight="2"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton50.1"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton50.2"
+                    android:layout_column="4"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton50.3"
+                    android:layout_column="5"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton50.4"
+                    android:layout_column="6"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal" android:width="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton50.5"
+                    android:layout_column="7"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
+                    android:width="10dp"/>
+            </TableRow>
+
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
@@ -378,9 +582,9 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/NEXT"
-                    android:id="@+id/btnNextQ1to10"
-                    android:onClick="btnNextQ1to10"/>
+                    android:text="@string/DONE"
+                    android:id="@+id/btnDoneQ45to50"
+                    android:onClick="btnDoneQ45to50"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -436,11 +640,9 @@
             </TableRow>
 
 
+
         </TableLayout>
 
     </ScrollView>
 
 </RelativeLayout>
-
-
-

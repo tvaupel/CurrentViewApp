@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context="uk.ucl.group21.currentviewapp.QuestionnaireMenu">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="uk.ucl.group21.currentviewapp.QuestionnaireMenu">
 
     <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Next"
-            android:id="@+id/next"
-            android:onClick="nextButton"
-            android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next"
+        android:onClick="nextButton"
+        android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
     <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Back"
-            android:id="@+id/back"
-            android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/next"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/next"/>
+
+    <Button
+        android:text="START WITH SECTION BY SECTION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/btnQM2SBS"
+        android:onClick="btnQM2SBS"
+        android:layout_marginTop="78dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:text="Start With OVERVIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:id="@+id/btnQM1OV"
+        android:onClick="btnQM1OV"
+        android:textSize="24sp"
+        android:layout_below="@+id/btnQM2SBS"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
