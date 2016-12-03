@@ -103,4 +103,13 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
         return true;
     }
 
+    public void btnOverview(View view){
+        Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
+        startActivity(intent);
+    }
+    public void btnSectionBySection(View view){
+        Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
+        startActivity(intent);
+    }
+
 }

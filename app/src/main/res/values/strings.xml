@@ -12,15 +12,24 @@
     <!--Strings used for the Dashboard -->
     <string name="Username">Username:</string>
     <string name="Next">Next</string>
+    <string name="Done">Done</string>
     <string name="Back">Back</string>
+    <string name="help">Help</string>
+    <string name="Setting">Setting</string>
 
     <!--Strings used for the Questionnaire Questions -->
     <string name="section_by_section">Section By Section</string>
     <string name="overview">Overview</string>
     <string name="Previous_Questionnaires">Previous Questionnaires</string>
     <string name="New_Questionnaire">New Questionnaire</string>
-    <string name="help">Help</string>
-    <string name="Setting">Setting</string>
+
+    <string name="nhs_id">NHS ID:</string>
+    <string name="cyp_name">CYP Name:</string>
+    <string name="dob">DOB:</string>
+    <string name="date">DATE:</string>
+    <string name="time">TIME:</string>
+    <string name="reason_of_completing_this_form">REASON OF COMPLETING THIS FORM:</string>
+
     <string name="Empty">____</string>
     <string name="Provisional_Problem_Description">Provisional Problem Description</string>
     <string name="None">None</string>
@@ -30,6 +39,74 @@
     <string name="Not_Known">Not Known</string>
     <string name="anxious_away_from_caregivers">Anxious away from caregivers</string>
 
+    <!-- Questionnaire questions-->
+    <string name="q1">Anxious away from caregivers(Separation anxiety)</string>
+    <string name="q2">Anxious in social situations(Social anxiety/phobia)</string>
+    <string name="q3">Anxious generally (Generalized anxiety)</string>
+    <string name="q4">Anxious in social situations</string>
+    <!-- empty questions-->
+    <string name="q5"></string>
+    <string name="q6"></string>
+    <string name="q7"></string>
+    <string name="q8"></string>
+    <string name="q9"></string>
+    <string name="q10"></string>
+
+    <string name="q11">Extreme of mood(Biopolar disorder)</string>
+    <string name="q12">Delusional beliefs and hallucinations (Psychosis)</string>
+    <string name="q13">Drugs and alcohol difficulties(Substance abuse) </string>
+    <string name="q14">Difficulties sitting still or concentrating(ADHD/Hyperactivity)</string>
+    <!-- empty questions-->
+    <string name="q15"></string>
+    <string name="q16"></string>
+    <string name="q17"></string>
+    <string name="q18"></string>
+    <string name="q19"></string>
+    <string name="q20"></string>
+
+    <string name="q21">Family relationship difficulties</string>
+    <string name="q22">Problems in attachment to parent/carer(Attachment problems)</string>
+    <string name="q23">Peer relationship difficulties</string>
+    <string name="q24">Persistent difficulties managing relationships with others(includes emerging personality disorder)</string>
+    <!-- empty questions-->
+    <string name="q25"></string>
+    <string name="q26"></string>
+    <string name="q27"></string>
+    <string name="q28"></string>
+    <string name="q29"></string>
+    <string name="q30"></string>
+
+    <string name="q31">Looked after child</string>
+    <string name="q32">Young carer status</string>
+    <string name="q33">Learning disability</string>
+    <string name="q34">Serious physical health issues(including chronic fatigue</string>
+    <string name="q38">Deemed "child in need" of social service input</string>
+    <string name="q39">Refugee or asylum seeker</string>
+    <string name="q40">Experience of war,torture or trafficking</string>
+    <string name="q41">Experience of abuse or neglect</string>
+    <!-- empty questions-->
+    <string name="q42"></string>
+    <string name="q43"></string>
+    <string name="q44"></string>
+    <string name="q45"></string>
+    <string name="q46"></string>
+    <string name="q47"></string>
+    <string name="q48"></string>
+    <string name="q49"></string>
+    <string name="q50"></string>
+
+    <string name="SELECTED_COMPLEXITY_FACTORS">SELECTED COMPLEXITY FACTORS</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="CONTEXTUAL_PROBLEMS">CONTEXTUAL PROBLEMS</string>
+    <string name="SCHOOL_WORK_or_TRAINING">SCHOOL,WORK or TRAINING</string>
+    <string name="HOME">HOME</string>
+    <string name="COMMUNITY">COMMUNITY</string>
+    <string name="SERVICE_ENGAGEMENT">SERVICE ENGAGEMENT</string>
+    <string name="EDUCATION_EMPLOYMENT_TRAINING">EDUCATION/EMPLOYMENT/TRAINING</string>
+    <string name="ATTENDANCE_DIFFICULTIES">ATTENDANCE DIFFICULTIES</string>
+    <string name="ATTAINMENT_DIFFICULTIES">ATTAINMENT ENGAGEMENT</string>
+    <string name="PROVISIONAL_PROBLEM_DESCRIPTION">PROVISIONAL PROBLEM DESCRIPTION</string>
 
     <!--Strings used for the Sorting Spinner in Previous Questionnaires-->
 
