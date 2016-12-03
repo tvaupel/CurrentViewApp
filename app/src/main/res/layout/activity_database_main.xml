@@ -1,211 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="false"
-    tools:context="uk.ucl.group21.currentviewapp.DatabaseMainActivity">
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView19"
-        android:layout_alignStart="@+id/textView19"
-        android:layout_below="@+id/textView19"
-        android:layout_marginTop="20dp"
-        android:text="REASON OF "
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView21"
-        android:layout_alignStart="@+id/textView21"
-        android:layout_below="@+id/textView21"
-        android:layout_marginTop="24dp"
-        android:text="DOB:"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView20"
-        android:layout_alignStart="@+id/textView20"
-        android:layout_below="@+id/textView20"
-        android:layout_marginTop="19dp"
-        android:text="CYP Name:"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/appBarLayout3"
-        android:layout_marginLeft="25dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="43dp"
-        android:text="NHS ID:"
-        android:textSize="24sp" />
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        tools:context="uk.ucl.group21.currentviewapp.DatabaseMainActivity">
 
     <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
+    <!-- NHS TextView and the TextEdit Box-->
     <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView22"
-        android:layout_alignStart="@+id/textView22"
-        android:layout_below="@+id/textView22"
-        android:layout_marginTop="15dp"
-        android:text="TIME:"
-        android:textSize="24sp" />
+            android:id="@+id/txtNHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/nhs_id"
+            android:textSize="24sp" />
+    <EditText
+            android:id="@+id/editText_NHSID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtNHS"
+            android:layout_toRightOf="@+id/txtNHS"
+            android:inputType="number" />
 
+    <!-- CYP TextView and the TextEdit Box-->
     <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView24"
-        android:layout_alignStart="@+id/textView24"
-        android:layout_below="@+id/textView24"
-        android:layout_marginTop="23dp"
-        android:text="DATE:"
-        android:textSize="24sp" />
-
+            android:id="@+id/txtCYP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtNHS"
+            android:layout_alignStart="@+id/txtNHS"
+            android:layout_below="@+id/txtNHS"
+            android:layout_marginTop="30dp"
+            android:text="@string/cyp_name"
+            android:textSize="24sp" />
     <EditText
-        android:id="@+id/editText_NHSID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:id="@+id/editText_CYPName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtCYP"
+            android:layout_toRightOf="@+id/txtCYP"
+            android:inputType="textPersonName" />
 
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView20"
-        android:layout_toRightOf="@+id/textView20"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/editText_REASONofCOMPLETING"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_alignBaseline="@+id/textView23"
-        android:layout_alignBottom="@+id/textView23"
-        android:layout_toEndOf="@+id/textView23"
-        android:layout_toRightOf="@+id/textView23"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
+    <!-- DoB TextView and the TextEdit Box-->
     <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView25"
-        android:layout_alignStart="@+id/textView25"
-        android:layout_below="@+id/textView25"
-        android:layout_marginTop="9dp"
-        android:text="THE FORM:"
-        android:textSize="24sp" />
+            android:id="@+id/txtDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtCYP"
+            android:layout_alignStart="@+id/txtCYP"
+            android:layout_below="@+id/txtCYP"
+            android:layout_marginTop="30dp"
+            android:text="@string/dob"
+            android:textSize="24sp"/>
+    <EditText
+            android:id="@+id/editText_DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtDOB"
+            android:layout_toRightOf="@+id/txtDOB"
+            android:inputType="date" />
 
+    <!-- Date TextView and the Calendar selector-->
     <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView26"
-        android:layout_alignStart="@+id/textView26"
-        android:layout_below="@+id/textView26"
-        android:layout_marginTop="7dp"
-        android:text="COMPLETING"
-        android:textSize="24sp" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtCYP"
+            android:layout_alignStart="@+id/txtCYP"
+            android:layout_below="@+id/txtDOB"
+            android:layout_marginTop="30dp"
+            android:text="@string/date"
+            android:textSize="24sp"
+            android:id="@+id/txtDate"/>
     <EditText
-        android:id="@+id/editText_CYPName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:id="@+id/editText_DATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtDate"
+            android:layout_toRightOf="@+id/txtDate"
+            android:inputType="date" />
 
-        android:layout_alignBaseline="@+id/textView21"
-        android:layout_alignBottom="@+id/textView21"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
+    <!-- Time TextView and the Time selector-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtDate"
+            android:layout_alignStart="@+id/txtDate"
+            android:layout_below="@+id/txtDate"
+            android:layout_marginTop="30dp"
+            android:text="@string/time"
+            android:textSize="24sp"
+            android:id="@+id/txtTime"/>
     <EditText
-        android:id="@+id/editText_TIME"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:id="@+id/editText_TIME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtTime"
+            android:layout_toRightOf="@+id/txtTime"
+            android:inputType="time"/>
 
-        android:layout_alignTop="@+id/textView19"
-        android:layout_toEndOf="@+id/textView22"
-        android:layout_toRightOf="@+id/textView22"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
+    <!-- Reason TextView and the TextEdit Box-->
+    <TextView
+            android:id="@+id/txtReasonComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtTime"
+            android:layout_alignStart="@+id/txtTime"
+            android:layout_below="@+id/txtTime"
+            android:layout_marginTop="30dp"
+            android:text="@string/reason_of_completing_this_form"
+            android:textSize="24sp" />
     <EditText
-        android:id="@+id/editText_DATE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:id="@+id/editText_REASONofCOMPLETING"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_below="@+id/txtReasonComplete"
+            android:layout_alignStart="@+id/txtReasonComplete"/>
 
-        android:layout_alignBaseline="@+id/textView22"
-        android:layout_alignBottom="@+id/textView22"
-        android:layout_marginLeft="7dp"
-        android:layout_marginStart="7dp"
-        android:layout_toEndOf="@+id/textView22"
-        android:layout_toRightOf="@+id/textView22"
-        android:ems="10"
-        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/editText_DOB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_alignBaseline="@+id/textView24"
-        android:layout_alignBottom="@+id/textView24"
-        android:layout_toEndOf="@+id/textView19"
-        android:layout_toRightOf="@+id/textView19"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
+    <!-- Additional Resources-->
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="NEXT (Add Data)"
-        android:layout_below="@+id/editText_REASONofCOMPLETING"
-        android:layout_alignEnd="@+id/fab" />
-
-    <Button
-        android:id="@+id/button2back"
-        android:text="BACK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button"
-        android:layout_alignBottom="@+id/button"
-        android:layout_toStartOf="@+id/editText_NHSID" />
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT (Add Data)"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>

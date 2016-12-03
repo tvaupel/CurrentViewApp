@@ -84,6 +84,12 @@
     <string name="title_activity_q31_to37">Q31To37</string>
     <string name="title_activity_q31_to_q37">Q31ToQ37</string>
     <string name="title_activity_q38_to_q44">Q38ToQ44</string>
+    <string name="nhs_id">NHS ID:</string>
+    <string name="cyp_name">CYP Name:</string>
+    <string name="dob">DOB:</string>
+    <string name="date">DATE:</string>
+    <string name="time">TIME:</string>
+    <string name="reason_of_completing_this_form">REASON OF COMPLETING THIS FORM:</string>
 
 
 </resources>
