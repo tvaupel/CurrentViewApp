@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="uk.ucl.group21.currentviewapp">
+    package="uk.ucl.group21.currentviewapp">
 
     <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity android:name=".LoginScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -16,34 +16,58 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".Dashboard"
-                android:label="Dashboard"
-                android:theme="@style/AppTheme.NoActionBar"/>
+            android:name=".Dashboard"
+            android:label="Dashboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-                android:name=".QuestionnaireMenu"
-                android:label="Questionnaire Menu"/>
+            android:name=".QuestionnaireMenu"
+            android:label="Questionnaire Menu"/>
 
         <activity
-                android:name=".LoginError"
-                android:label="Login Error"/>
+            android:name=".LoginError"
+            android:label="Login Error"/>
 
         <activity
-                android:name=".PreviousQuestionnaires"
-                android:label="Previous Questionnaires"/>
+            android:name=".PreviousQuestionnaires"
+            android:label="Previous Questionnaires"/>
 
         <activity
-                android:name=".Setting"
-                android:label="Setting"/>
+            android:name=".Setting"
+            android:label="Setting"/>
 
         <activity
-                android:name=".Help"
-                android:label="Help"
-                android:theme="@style/AppTheme.NoActionBar"/>
+            android:name=".Help"
+            android:label="Help"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-                android:name=".Q1ToQ10"
-                android:label="Questions 1-10">
-        </activity>
+            android:name=".Q1ToQ10"
+            android:label="Questions 1-10"/>
+
+        <activity android:name=".DatabaseMainActivity"
+            android:label="@string/title_activity_database_main" />
+
+        <activity android:name=".Questionnaire_Overview"
+            android:label="Questionnaire Overview" />
+
+        <activity android:name=".Q11ToQ20"
+            android:label="Questions 11-20" />
+
+        <activity android:name=".Q21ToQ30"
+            android:label="Questions 21-30" />
+
+        <activity android:name=".Q31ToQ37"
+            android:label="Questions 31-37" />
+
+        <activity android:name=".Q38ToQ44"
+            android:label="Questions 38-44" />
+
+        <activity android:name=".Q45ToQ50"
+            android:label="Questions 45-50" />
+
+
     </application>
 
 </manifest>
+
+
