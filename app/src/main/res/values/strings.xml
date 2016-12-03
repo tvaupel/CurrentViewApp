@@ -32,14 +32,17 @@
 
 
     <!--Strings used for the Sorting Spinner in Previous Questionnaires-->
-    <string name="questionnaire_sort">Choose a country</string>
+
+    <string name="sort_prompt">Sort by:</string>
     <string name="spinner_title">Spinner</string>
-    <string-array name="questionnaire_sort_by">
-        <item>Sort by: Practitioner First Name A-Z</item>
-        <item>Sort by: Practitioner First Name Z-A</item>
-        <item>Sort by: Patient First Name A-Z</item>
-        <item>Sort by: Patient First Name Z-A</item>
-        <item>Sort by: Date Created Newest First</item>
-        <item>Sort by: Date Created Oldest First</item>
+
+    <string-array name="questionnaire_array">
+        <item>Practitioner: First Name A-Z</item>
+        <item>Practitioner: First Name Z-A</item>
+        <item>Patient: First Name A-Z</item>
+        <item>Patient: First Name Z-A</item>
+        <item>Date Created: Newest-Oldest</item>
+        <item>Date Created: Oldest-Newest</item>
     </string-array>
+
 </resources>

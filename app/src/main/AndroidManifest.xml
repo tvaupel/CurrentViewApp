@@ -30,7 +30,8 @@
 
         <activity
                 android:name=".PreviousQuestionnaires"
-                android:label="Previous Questionnaires"/>
+                android:label="Previous Questionnaires"
+                android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".Setting"
