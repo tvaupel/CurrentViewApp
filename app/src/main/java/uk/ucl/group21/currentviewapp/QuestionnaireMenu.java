@@ -36,11 +36,6 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    public void nextButton(View view){
-        Intent intent = new Intent(this, Q1ToQ10.class); //opens the Dashboard Activity
-        startActivity(intent);
-
-    }
 
     @Override
     public void onBackPressed() {

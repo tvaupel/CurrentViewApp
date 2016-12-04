@@ -44,27 +44,33 @@
 
         <activity
                 android:name=".Q1ToQ10"
-                android:label="Questions 1-10"/>
+                android:label="Questions 1-10"
+                android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".Q11ToQ20"
-                android:label="Questions 11-20"/>
+                android:label="Questions 11-20"
+                android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".Q21ToQ30"
-                android:label="Questions 21-30"/>
+                android:label="Questions 21-30"
+                android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".Q31ToQ37"
-                android:label="Questions 31-37"/>
+                android:label="Questions 31-37"
+                android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".Q38ToQ44"
-                android:label="Questions 38-44"/>
+                android:label="Questions 38-44"
+                android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".Q45ToQ50"
-                android:label="Questions 45-50"/>
+                android:label="Questions 45-50"
+                android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
