@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"/>
 
     <include
-            layout="@layout/activity_q1_to_10_screen"
+            layout="@layout/activity_q1_to_q10_screen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
