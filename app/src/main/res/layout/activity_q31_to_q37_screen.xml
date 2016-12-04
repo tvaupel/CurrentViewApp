@@ -119,6 +119,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"/>
             </TableRow>
+
+            <!-- Question 31 -->
             <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -140,18 +142,17 @@
                         android:layout_column="2"
                         android:layout_weight="2"
                         android:textSize="18sp" android:maxWidth="300dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton1.1"
+                        android:id="@+id/none31"
                         android:layout_column="3"
                         android:textAlignment="center"
                         android:layout_weight="1" android:layout_gravity="center_horizontal" android:width="25dp"/>
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton1.2"
+                        android:id="@+id/mild31"
                         android:layout_column="4"
                         android:layout_weight="1"
                         android:textAlignment="center"
@@ -159,7 +160,7 @@
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton1.3"
+                        android:id="@+id/moderate31"
                         android:layout_column="5"
                         android:layout_weight="1"
                         android:textAlignment="center"
@@ -167,7 +168,7 @@
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton1.4"
+                        android:id="@+id/severe31"
                         android:layout_column="6"
                         android:layout_weight="1"
                         android:textAlignment="center"
@@ -175,14 +176,14 @@
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton1.5"
+                        android:id="@+id/not_known31"
                         android:layout_column="7"
                         android:layout_weight="1"
-                        android:layout_marginRight="5dp" android:layout_gravity="center_horizontal"
-                        android:width="25dp"/>
-
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center_horizontal" android:width="25dp"/>
             </TableRow>
 
+            <!-- Question 32 -->
             <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -202,45 +203,45 @@
                         android:layout_column="2"
                         android:textSize="18sp"
                         android:layout_weight="2" android:maxWidth="300dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2.1"
+                        android:id="@+id/none32"
                         android:layout_column="3"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2.2"
+                        android:id="@+id/mild32"
                         android:layout_column="4"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2.3"
+                        android:id="@+id/moderate32"
                         android:layout_column="5"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2.4"
+                        android:id="@+id/severe32"
                         android:layout_column="6"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2.5"
+                        android:id="@+id/not_known32"
                         android:layout_column="7"
                         android:layout_weight="1"
-                        android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
-                        android:width="25dp"/>
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_horizontal" android:width="25dp"/>
             </TableRow>
 
+            <!-- Question 33 -->
             <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent">
@@ -261,47 +262,42 @@
                         android:layout_column="2"
                         android:textSize="18sp"
                         android:layout_weight="2" android:maxWidth="300dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton3.1"
+                        android:id="@+id/none33"
                         android:layout_column="3"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton3.2"
+                        android:id="@+id/mild33"
                         android:layout_column="4"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton3.3"
+                        android:id="@+id/moderate33"
                         android:layout_column="5"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton3.4"
+                        android:id="@+id/severe33"
                         android:layout_column="6"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton3.5"
+                        android:id="@+id/not_known33"
                         android:layout_column="7"
                         android:layout_weight="1"
-                        android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
-                        android:width="25dp"/>
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_horizontal" android:width="25dp"/>
             </TableRow>
 
             <!-- Question 34 -->
@@ -325,7 +321,6 @@
                         android:layout_column="2"
                         android:textSize="18sp"
                         android:layout_weight="2" android:maxWidth="300dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -333,7 +328,6 @@
                         android:layout_column="3"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -341,7 +335,6 @@
                         android:layout_column="4"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -349,7 +342,6 @@
                         android:layout_column="5"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -357,17 +349,15 @@
                         android:layout_column="6"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" android:width="25dp"/>
-
                 <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/not_known34"
                         android:layout_column="7"
                         android:layout_weight="1"
-                        android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
-                        android:width="25dp"/>
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_horizontal" android:width="25dp"/>
             </TableRow>
-
         </TableLayout>
     </ScrollView>
 </RelativeLayout>
