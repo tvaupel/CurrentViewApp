@@ -91,12 +91,12 @@
     <string name="q42"></string>
     <string name="q43"></string>
     <string name="q44"></string>
-    <string name="q45"></string>
-    <string name="q46"></string>
-    <string name="q47"></string>
-    <string name="q48"></string>
-    <string name="q49"></string>
-    <string name="q50"></string>
+    <string name="q45">Home</string>
+    <string name="q46">School, Work or Training</string>
+    <string name="q47">Community</string>
+    <string name="q48">Service Engagement</string>
+    <string name="q49">Attendance Difficulties</string>
+    <string name="q50">Attainment Difficulties</string>
 
     <string name="SELECTED_COMPLEXITY_FACTORS">SELECTED COMPLEXITY FACTORS</string>
     <string name="Yes">Yes</string>
