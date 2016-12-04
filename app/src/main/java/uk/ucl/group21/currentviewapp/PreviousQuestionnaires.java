@@ -66,7 +66,6 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
         sortingSpinner.setAdapter(dataAdapter);
     }
 
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -128,7 +127,6 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
