@@ -17,7 +17,7 @@
     <string name="help">Help</string>
     <string name="Setting">Setting</string>
 
-    <!--Strings used for the Questionnaire Questions -->
+    <!--Strings used for the Questionnaire -->
     <string name="section_by_section">Section By Section</string>
     <string name="overview">Overview</string>
     <string name="Previous_Questionnaires">Previous Questionnaires</string>
@@ -39,6 +39,22 @@
     <string name="Not_Known">Not Known</string>
     <string name="anxious_away_from_caregivers">Anxious away from caregivers</string>
 
+    <string name="_31">31</string>
+    <string name="_32">32</string>
+    <string name="_33">33</string>
+    <string name="_34">34</string>
+
+    <string name="_38">38</string>
+    <string name="_39">39</string>
+    <string name="_40">40</string>
+    <string name="_41">41</string>
+
+    <string name="_45">45</string>
+    <string name="_46">46</string>
+    <string name="_47">47</string>
+    <string name="_48">48</string>
+    <string name="_49">49</string>
+    <string name="_50">50</string>
     <!-- Questionnaire questions-->
     <string name="q1">Anxious away from caregivers (Separation anxiety)</string>
     <string name="q2">Anxious in social situations (Social anxiety/phobia)</string>
@@ -54,7 +70,7 @@
 
     <string name="q11">Extreme of mood (Biopolar disorder)</string>
     <string name="q12">Delusional beliefs and hallucinations (Psychosis)</string>
-    <string name="q13">Drugs and alcohol difficulties (Substance abuse) </string>
+    <string name="q13">Drugs and alcohol difficulties (Substance abuse)</string>
     <string name="q14">Difficulties sitting still or concentrating (ADHD/Hyperactivity)</string>
     <!-- empty questions-->
     <string name="q15"></string>
@@ -67,7 +83,9 @@
     <string name="q21">Family relationship difficulties</string>
     <string name="q22">Problems in attachment to parent/carer (Attachment problems)</string>
     <string name="q23">Peer relationship difficulties</string>
-    <string name="q24">Persistent difficulties managing relationships with others (includes emerging personality disorder)</string>
+    <string name="q24">Persistent difficulties managing relationships with others (includes emerging personality
+        disorder)
+    </string>
     <!-- empty questions-->
     <string name="q25"></string>
     <string name="q26"></string>
@@ -87,7 +105,6 @@
     <string name="q39">Refugee or asylum seeker</string>
     <string name="q40">Experience of war,torture or trafficking</string>
     <string name="q41">Experience of abuse or neglect</string>
-    <!-- empty questions-->
     <string name="q42"></string>
     <string name="q43"></string>
     <string name="q44"></string>
@@ -98,24 +115,16 @@
     <string name="q49">Attendance Difficulties</string>
     <string name="q50">Attainment Difficulties</string>
 
-    <string name="SELECTED_COMPLEXITY_FACTORS">SELECTED COMPLEXITY FACTORS</string>
+    <string name="SELECTED_COMPLEXITY_FACTORS">Selected Complexity Factors</string>
     <string name="Yes">Yes</string>
     <string name="No">No</string>
-    <string name="CONTEXTUAL_PROBLEMS">CONTEXTUAL PROBLEMS</string>
-    <string name="SCHOOL_WORK_or_TRAINING">SCHOOL,WORK or TRAINING</string>
-    <string name="HOME">HOME</string>
-    <string name="COMMUNITY">COMMUNITY</string>
-    <string name="SERVICE_ENGAGEMENT">SERVICE ENGAGEMENT</string>
-    <string name="EDUCATION_EMPLOYMENT_TRAINING">EDUCATION/EMPLOYMENT/TRAINING</string>
-    <string name="ATTENDANCE_DIFFICULTIES">ATTENDANCE DIFFICULTIES</string>
-    <string name="ATTAINMENT_DIFFICULTIES">ATTAINMENT ENGAGEMENT</string>
-    <string name="PROVISIONAL_PROBLEM_DESCRIPTION">PROVISIONAL PROBLEM DESCRIPTION</string>
+    <string name="CONTEXTUAL_PROBLEMS">Contextual Problems</string>
+    <string name="PROVISIONAL_PROBLEM_DESCRIPTION">Provisional Problem Description</string>
 
     <!--Strings used for the Sorting Spinner in Previous Questionnaires-->
-
     <string name="sort_prompt">Sort by:</string>
     <string name="spinner_title">Spinner</string>
-
+    <string name="Education_employment_training">Education/ Employment/ Training</string>
     <string-array name="questionnaire_array">
         <item>Practitioner: First Name A-Z</item>
         <item>Practitioner: First Name Z-A</item>
