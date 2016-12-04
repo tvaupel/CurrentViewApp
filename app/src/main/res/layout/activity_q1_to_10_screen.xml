@@ -12,21 +12,21 @@
         tools:context="uk.ucl.group21.currentviewapp.Q1ToQ10">
 
     <Button
-            android:text="Button"
+            android:text="@string/Next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button2"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="64dp"
-            android:layout_marginBottom="64dp" android:onClick="btnNext"/>
+            android:layout_marginBottom="64dp" android:onClick="btnNext" android:id="@+id/NextQ1"/>
 
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical|horizontal"
             android:fillViewport="true" android:layout_marginLeft="0dp"
-            android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            android:layout_alignParentBottom="true" android:layout_alignParentStart="true"
+            android:layout_marginTop="60dp">
 
         <TableLayout
                 android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                         android:layout_weight="1"
                         android:textAlignment="center"
                         android:textSize="18sp"
-                        android:layout_gravity="center_horizontal"/>
+                        android:layout_gravity="center_horizontal" android:textScaleX="0.8"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                         android:layout_weight="1"
                         android:textAlignment="center"
                         android:textSize="18sp"
-                        android:layout_gravity="center_horizontal"/>
+                        android:layout_gravity="center_horizontal" android:textScaleX="0.8"/>
             </TableRow>
 
             <TableRow

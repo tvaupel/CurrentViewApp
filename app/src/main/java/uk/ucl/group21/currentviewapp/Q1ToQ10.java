@@ -37,12 +37,15 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
         startActivity(intent);
     }
 
+    ///////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////
     public void saveInput(){
 
         // Save the input of the questionnaire up till here
 
-
     }
+    ///////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////
 
     @Override
     public void onBackPressed() {
@@ -86,25 +89,32 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
         if (id == R.id.nav_dashboard) {
             //save the current questionnaire inputs!
             saveInput();
-
+            // popup window to ask for confirmation
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
             saveInput();
-            drawer.closeDrawer(GravityCompat.START);
+            // popup window to ask for confirmation
+            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Dashboard Activity
+            startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             saveInput();
+            // popup window to ask for confirmation
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             saveInput();
-            drawer.closeDrawer(GravityCompat.START);
+            // popup window to ask for confirmation
+            Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
+            startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
             saveInput();
+
+            // popup window to ask for confirmation
 
             System.exit(0);
         }

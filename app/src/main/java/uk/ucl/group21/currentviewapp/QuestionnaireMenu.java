@@ -81,14 +81,15 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
-            drawer.closeDrawer(GravityCompat.START);
+            drawer.closeDrawer(GravityCompat.START); // Closes the drawer since the user is in the questionnaire menu
 
         } else if (id == R.id.nav_previous_questionnaire) {
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
-            drawer.closeDrawer(GravityCompat.START);
+            Intent intent = new Intent(this, Help.class); //opens the Help Activity
+            startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
             System.exit(0);
