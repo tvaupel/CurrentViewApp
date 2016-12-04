@@ -40,10 +40,10 @@
     <string name="anxious_away_from_caregivers">Anxious away from caregivers</string>
 
     <!-- Questionnaire questions-->
-    <string name="q1">Anxious away from caregivers(Separation anxiety)</string>
-    <string name="q2">Anxious in social situations(Social anxiety/phobia)</string>
+    <string name="q1">Anxious away from caregivers (Separation anxiety)</string>
+    <string name="q2">Anxious in social situations (Social anxiety/phobia)</string>
     <string name="q3">Anxious generally (Generalized anxiety)</string>
-    <string name="q4">Anxious in social situations</string>
+    <string name="q4">Complelled to do or think things (OCD)</string>
     <!-- empty questions-->
     <string name="q5"></string>
     <string name="q6"></string>
@@ -52,10 +52,10 @@
     <string name="q9"></string>
     <string name="q10"></string>
 
-    <string name="q11">Extreme of mood(Biopolar disorder)</string>
+    <string name="q11">Extreme of mood (Biopolar disorder)</string>
     <string name="q12">Delusional beliefs and hallucinations (Psychosis)</string>
-    <string name="q13">Drugs and alcohol difficulties(Substance abuse) </string>
-    <string name="q14">Difficulties sitting still or concentrating(ADHD/Hyperactivity)</string>
+    <string name="q13">Drugs and alcohol difficulties (Substance abuse) </string>
+    <string name="q14">Difficulties sitting still or concentrating (ADHD/Hyperactivity)</string>
     <!-- empty questions-->
     <string name="q15"></string>
     <string name="q16"></string>
@@ -65,9 +65,9 @@
     <string name="q20"></string>
 
     <string name="q21">Family relationship difficulties</string>
-    <string name="q22">Problems in attachment to parent/carer(Attachment problems)</string>
+    <string name="q22">Problems in attachment to parent/carer (Attachment problems)</string>
     <string name="q23">Peer relationship difficulties</string>
-    <string name="q24">Persistent difficulties managing relationships with others(includes emerging personality disorder)</string>
+    <string name="q24">Persistent difficulties managing relationships with others (includes emerging personality disorder)</string>
     <!-- empty questions-->
     <string name="q25"></string>
     <string name="q26"></string>
@@ -79,7 +79,10 @@
     <string name="q31">Looked after child</string>
     <string name="q32">Young carer status</string>
     <string name="q33">Learning disability</string>
-    <string name="q34">Serious physical health issues(including chronic fatigue</string>
+    <string name="q34">Serious physical health issues (including chronic fatigue</string>
+    <string name="q35"></string>
+    <string name="q36"></string>
+    <string name="q37"></string>
     <string name="q38">Deemed "child in need" of social service input</string>
     <string name="q39">Refugee or asylum seeker</string>
     <string name="q40">Experience of war,torture or trafficking</string>

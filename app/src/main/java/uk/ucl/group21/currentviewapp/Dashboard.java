@@ -14,14 +14,11 @@ import android.view.View;
 
 public class Dashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
-    Intent prevIntent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        this.prevIntent = getIntent();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -122,6 +119,4 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         Intent intent = new Intent(this, Setting.class); //opens the Setting Activity
         startActivity(intent);
     }
-
-
 }

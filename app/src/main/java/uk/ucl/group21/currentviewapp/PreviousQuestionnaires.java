@@ -20,7 +20,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PreviousQuestionnaires extends AppCompatActivity implements OnItemSelectedListener, NavigationView.OnNavigationItemSelectedListener{
+public class PreviousQuestionnaires extends AppCompatActivity implements OnItemSelectedListener, NavigationView.OnNavigationItemSelectedListener {
 
 
     public void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,6 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
         // Spinner element
         Spinner sortingSpinner = (Spinner) findViewById(R.id.spinner);
 
@@ -50,14 +49,12 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
 
         // Spinner Drop down elements
         List<String> categories = new ArrayList<>();
-
         categories.add("Practitioner First Name A-Z");
         categories.add("Practitioner First Name Z-A");
         categories.add("Patient First Name A-Z");
         categories.add("Patient First Name Z-A");
         categories.add("Date Created Newest First");
         categories.add("Date Created Oldest First");
-
 
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
@@ -67,7 +64,6 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
 
         // attaching data adapter to spinner
         sortingSpinner.setAdapter(dataAdapter);
-
     }
 
 
@@ -142,9 +138,8 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
         // Showing selected spinner item
         Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
     }
+
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
     }
-
-
 }

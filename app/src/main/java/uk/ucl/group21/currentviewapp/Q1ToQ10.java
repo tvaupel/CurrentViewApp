@@ -122,6 +122,4 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-
 }
