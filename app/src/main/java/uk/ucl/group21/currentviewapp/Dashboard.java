@@ -14,7 +14,6 @@ import android.view.View;
 
 public class Dashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,6 +119,4 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         Intent intent = new Intent(this, Setting.class); //opens the Setting Activity
         startActivity(intent);
     }
-
-
 }
