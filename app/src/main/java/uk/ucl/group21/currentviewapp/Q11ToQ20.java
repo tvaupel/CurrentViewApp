@@ -11,24 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-public class PreviousQuestionnaires extends AppCompatActivity implements OnItemSelectedListener, NavigationView.OnNavigationItemSelectedListener {
-
-
-    public void onCreate(Bundle savedInstanceState) {
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_previous_questionnaires);
+        setContentView(R.layout.activity_q11_to_q20);
 
-        // Creating the Toolbar and the Drawer for the menu bar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -39,32 +29,19 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(this);}
 
-        // Spinner element
-        Spinner sortingSpinner = (Spinner) findViewById(R.id.spinner);
 
-        // Spinner click listener
-        sortingSpinner.setOnItemSelectedListener(this);
+    ///////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////
+    public void saveInput(){
 
-        // Spinner Drop down elements
-        List<String> categories = new ArrayList<>();
-        categories.add("Practitioner First Name A-Z");
-        categories.add("Practitioner First Name Z-A");
-        categories.add("Patient First Name A-Z");
-        categories.add("Patient First Name Z-A");
-        categories.add("Date Created Newest First");
-        categories.add("Date Created Oldest First");
+        // Save the input of the questionnaire up till here
 
-        // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
-
-        // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // attaching data adapter to spinner
-        sortingSpinner.setAdapter(dataAdapter);
     }
+    ///////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////
+
 
     @Override
     public void onBackPressed() {
@@ -101,43 +78,49 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         if (id == R.id.nav_dashboard) {
-            Intent intent = new Intent(this, Dashboard.class); //opens the Questionnaire Menu Activity
+            //save the current questionnaire inputs!
+            saveInput();
+
+            Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
-            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
+            saveInput();
+            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens a New Questionnaire Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
-            drawer.closeDrawer(GravityCompat.START);
+            saveInput();
+            Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
+            startActivity(intent);
 
         } else if (id == R.id.nav_help) {
-            Intent intent = new Intent(this, Help.class); //opens the Help Activity
+            saveInput();
+            Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
+            saveInput();
 
+            // popup window to ask for confirmation
+
+            System.exit(0);
         }
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        // On selecting a spinner item
-        String item = parent.getItemAtPosition(position).toString();
 
-        // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+    public void btnNextQ11to20(View view) {
+        // saving the data to the local cache (local DB) first
+        saveInput();
+        Intent intent = new Intent(this, Q21ToQ30.class); //opens the next set of questions
+        startActivity(intent);
     }
 
-    public void onNothingSelected(AdapterView<?> arg0) {
-        // TODO Auto-generated method stub
-    }
 }
