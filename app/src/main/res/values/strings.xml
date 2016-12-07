@@ -39,15 +39,55 @@
     <string name="Not_Known">Not Known</string>
     <string name="anxious_away_from_caregivers">Anxious away from caregivers</string>
 
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_10">10</string>
+
+    <string name="_11">11</string>
+    <string name="_12">12</string>
+    <string name="_13">13</string>
+    <string name="_14">14</string>
+    <string name="_15">15</string>
+    <string name="_16">16</string>
+    <string name="_17">17</string>
+    <string name="_18">18</string>
+    <string name="_19">19</string>
+    <string name="_20">20</string>
+
+    <string name="_21">21</string>
+    <string name="_22">22</string>
+    <string name="_23">23</string>
+    <string name="_24">24</string>
+    <string name="_25">25</string>
+    <string name="_26">26</string>
+    <string name="_27">27</string>
+    <string name="_28">28</string>
+    <string name="_29">29</string>
+    <string name="_30">30</string>
+
     <string name="_31">31</string>
     <string name="_32">32</string>
     <string name="_33">33</string>
     <string name="_34">34</string>
+    <string name="_35">35</string>
+    <string name="_36">36</string>
+    <string name="_37">37</string>
+
 
     <string name="_38">38</string>
     <string name="_39">39</string>
     <string name="_40">40</string>
     <string name="_41">41</string>
+    <string name="_42">42</string>
+    <string name="_43">43</string>
+    <string name="_44">44</string>
 
     <string name="_45">45</string>
     <string name="_46">46</string>
@@ -55,69 +95,69 @@
     <string name="_48">48</string>
     <string name="_49">49</string>
     <string name="_50">50</string>
+
     <!--Questionnairequestions-->
-    <string name="q1">Anxiousawayfromcaregivers(Separationanxiety)</string>
-    <string name="q2">Anxiousinsocialsituations(Socialanxiety/phobia)</string>
-    <string name="q3">Anxiousgenerally(Generalizedanxiety)</string>
-    <string name="q4">Anxiousinsocialsituations</string>
+    <string name="q1">Anxious away from caregivers(Separationanxiety)</string>
+    <string name="q2">Anxious in social situations(Socialanxiety/phobia)</string>
+    <string name="q3">Anxious generally(Generalizedanxiety)</string>
+    <string name="q4">Anxious in social situations</string>
     <string name="q5">Panics(Panicdisorder)</string>
-    <string name="q6">Avoidsgoingout(Agoraphobia)</string>
-    <string name="q7">Avoidsspecificthings(Specificphobia)</string>
-    <string name="q8">Repetitiveproblematicbehaviours(Habitproblems)</string>
+    <string name="q6">Avoids going out(Agoraphobia)</string>
+    <string name="q7">Avoids specific things(Specificphobia)</string>
+    <string name="q8">Repetitive problematic behaviours(Habitproblems)</string>
     <string name="q9">Depression/lowmood(Depression)</string>
     <string name="q10">Self-Harm(Selfinjuryorself-harm)</string>
 
-    <string name="q11">Extremeofmood(Biopolardisorder)</string>
-    <string name="q12">Delusionalbeliefsandhallucinations(Psychosis)</string>
-    <string name="q13">Drugsandalcoholdifficulties(Substanceabuse)</string>
-    <string name="q14">Difficultiessittingstillorconcentrating(ADHD/Hyperactivity)</string>
-    <string name="q15">Behaviouraldifficulties(CDorODD)</string>
-    <string name="q16">Posesrisktoothers</string>
-    <string name="q17">CarermanagementofCYPbehaviour(e.g.,managementofchild)</string>
-    <string name="q18">Doesn\'tgettotoiletintime(Eliminationproblem)</string>
-    <string name="q19">Disturbedbytraumaticevent(PTSD)</string>
-    <string name="q20">Eatingissues(Anorexia/Bulimia)</string>
+    <string name="q11">Extreme of mood(Biopolardisorder)</string>
+    <string name="q12">Delusional beliefs and hallucinations(Psychosis)</string>
+    <string name="q13">Drugs and alcohol difficulties(Substanceabuse)</string>
+    <string name="q14">Difficulties sitting still or concentrating(ADHD/Hyperactivity)</string>
+    <string name="q15">Behavioural difficulties(CDorODD)</string>
+    <string name="q16">Poses risk to others</string>
+    <string name="q17">Carer management of CYP behaviour(e.g.,management of child)</string>
+    <string name="q18">Doesn\'t get to toilet in time(Elimination problem)</string>
+    <string name="q19">Disturbed by traumatic event(PTSD)</string>
+    <string name="q20">Eating issues(Anorexia/Bulimia)</string>
 
 
-    <string name="q21">Familyrelationshipdifficulties</string>
-    <string name="q22">Problemsinattachmenttoparent/carer(Attachmentproblems)</string>
-    <string name="q23">Peerrelationshipdifficulties</string>
-    <string name="q24">Persistentdifficultiesmanagingrelationshipswithothers(includesemergingpersonalitydisorder)</string>
-    <string name="q25">Doesnotspeak(Selectivemutism)</string>
-    <string name="q26">Genderdiscomfortissues(GenderIdentitydisorder)</string>
-    <string name="q27">Unexplainedphysicalsymptoms</string>
-    <string name="q28">Unexplaineddevelopmentaldifficulties</string>
-    <string name="q29">Self-careIssues(includemedicalcaremanagement,obesity)</string>
-    <string name="q30">Adjustmenttohealthissues</string>
+    <string name="q21">Family relationship difficulties</string>
+    <string name="q22">Problems in attachment to parent/carer(Attachmentproblems)</string>
+    <string name="q23">Peer relationship difficulties</string>
+    <string name="q24">Persistent difficulties managing relationships with others(includesemergingpersonalitydisorder)</string>
+    <string name="q25">Does not speak(Selective mutism)</string>
+    <string name="q26">Gender discomfort issues(Gender Identity disorder)</string>
+    <string name="q27">Unexplained physical symptoms</string>
+    <string name="q28">Unexplained developmental difficulties</string>
+    <string name="q29">Self-care Issues(include medical care management,obesity)</string>
+    <string name="q30">Adjustment to health issues</string>
 
-    <string name="q31">Lookedafterchild</string>
-    <string name="q32">Youngcarerstatus</string>
-    <string name="q33">Learningdisability</string>
-    <string name="q34">Seriousphysicalhealthissues(includingchronicfatigue</string>
-    <string name="q35">PervasiveDevelopmentalDisorders(Autism/Asperger\'s)</string>
-    <string name="q36">Neurologicalissues(e.g.TicsorTourette\'s)</string>
-    <string name="q37">Currentprotectionplan</string>
+    <string name="q31">Looked after child</string>
+    <string name="q32">Young carer status</string>
+    <string name="q33">Learning disability</string>
+    <string name="q34">Serious physical health issues(including chronic fatigue</string>
+    <string name="q35">Pervasive Developmental Disorders(Autism/Asperger\'s)</string>
+    <string name="q36">Neurological issues(e.g.Tics or Tourette\'s)</string>
+    <string name="q37">Current protection plan</string>
 
-    <string name="q38">Deemed"childinneed"ofsocialserviceinput</string>
-    <string name="q39">Refugeeorasylumseeker</string>
-    <string name="q40">Experienceofwar,tortureortrafficking</string>
-    <string name="q41">Experienceofabuseorneglect</string>
-    <string name="q42">Parentalhealthissues</string>
-    <string name="q43">ContactwithYouthJusticeSystem</string>
-    <string name="q44">Livinginfinancialdifficulty</string>
+    <string name="q38">Deemed"child in need"of social service input</string>
+    <string name="q39">Refugee or asylum seeker</string>
+    <string name="q40">Experience of war,torture or trafficking</string>
+    <string name="q41">Experience of abuse or neglect</string>
+    <string name="q42">Parental health issues</string>
+    <string name="q43">Contact with Youth Justice System</string>
+    <string name="q44">Living in financial difficulty</string>
     <string name="q45">Home</string>
-    <string name="q46">School,WorkorTraining</string>
+    <string name="q46">School,Work or Training</string>
     <string name="q47">Community</string>
-    <string name="q48">ServiceEngagement</string>
-    <string name="q49">AttendanceDifficulties</string>
-    <string name="q50">AttainmentDifficulties</string>
+    <string name="q48">Service Engagement</string>
+    <string name="q49">Attendance Difficulties</string>
+    <string name="q50">Attainment Difficulties</string>
 
 
-    <string name="SELECTED_COMPLEXITY_FACTORS">Selected Complexity Factors</string>
+    <string name="Selected_Complecity_Factors">Selected Complexity Factors</string>
     <string name="Yes">Yes</string>
     <string name="No">No</string>
-    <string name="CONTEXTUAL_PROBLEMS">Contextual Problems</string>
-    <string name="PROVISIONAL_PROBLEM_DESCRIPTION">Provisional Problem Description</string>
+    <string name="Contextual_Problems">Contextual Problems</string>
 
     <!--Strings used for the Sorting Spinner in Previous Questionnaires-->
     <string name="sort_prompt">Sort by:</string>
