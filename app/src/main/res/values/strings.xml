@@ -108,15 +108,15 @@
     <string name="q9">Depression/lowmood(Depression)</string>
     <string name="q10">Self-Harm(Selfinjuryorself-harm)</string>
 
-    <string name="q11">Extreme of mood(Biopolardisorder)</string>
-    <string name="q12">Delusional beliefs and hallucinations(Psychosis)</string>
-    <string name="q13">Drugs and alcohol difficulties(Substanceabuse)</string>
+    <string name="q11">Extreme of mood (Biopolardisorder)</string>
+    <string name="q12">Delusional beliefs and hallucinations (Psychosis)</string>
+    <string name="q13">Drugs and alcohol difficulties (Substanceabuse)</string>
     <string name="q14">Difficulties sitting still or concentrating(ADHD/Hyperactivity)</string>
-    <string name="q15">Behavioural difficulties(CDorODD)</string>
+    <string name="q15">Behavioural difficulties (CDorODD)</string>
     <string name="q16">Poses risk to others</string>
-    <string name="q17">Carer management of CYP behaviour(e.g.,management of child)</string>
-    <string name="q18">Doesn\'t get to toilet in time(Elimination problem)</string>
-    <string name="q19">Disturbed by traumatic event(PTSD)</string>
+    <string name="q17">Carer management of CYP behaviour (e.g.,management of child)</string>
+    <string name="q18">Doesn\'t get to toilet in time (Elimination problem)</string>
+    <string name="q19">Disturbed by traumatic event (PTSD)</string>
     <string name="q20">Eating issues(Anorexia/Bulimia)</string>
 
 
