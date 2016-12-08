@@ -43,6 +43,11 @@
                 android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
+            android:name=".QuestionnaireOverview"
+            android:label="Questionnaire Overview"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
                 android:name=".Q1ToQ10"
                 android:label="Questions 1-10"
                 android:theme="@style/AppTheme.NoActionBar"/>
@@ -70,7 +75,11 @@
         <activity
                 android:name=".Q45ToQ50"
                 android:label="Questions 45-50"
-                android:theme="@style/AppTheme.NoActionBar"/>
+                android:theme="@style/AppTheme.NoActionBar"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

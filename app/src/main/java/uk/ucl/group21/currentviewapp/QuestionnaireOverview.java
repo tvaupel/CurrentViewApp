@@ -10,14 +10,13 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class QuestionnaireMenu extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class QuestionnaireOverview extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questionnaire_menu);
+        setContentView(R.layout.activity_questionnaire_overview);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -31,6 +30,7 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
 
 
     @Override
@@ -77,31 +77,21 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
-            drawer.closeDrawer(GravityCompat.START); // Closes the drawer since the user is in the questionnaire menu
+            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
+            startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
-            Intent intent = new Intent(this, Help.class); //opens the Help Activity
-            startActivity(intent);
+            drawer.closeDrawer(GravityCompat.START);
 
         } else if (id == R.id.nav_logout) {
-            System.exit(0);
+
         }
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-    public void btnOverview(View view){
-        Intent intent = new Intent(this, QuestionnaireOverview.class); //opens the questionnaire activity
-        startActivity(intent);
-    }
-    public void btnSectionBySection(View view){
-        Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
-        startActivity(intent);
-    }
-
 }
