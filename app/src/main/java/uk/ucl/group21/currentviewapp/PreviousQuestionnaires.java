@@ -107,12 +107,10 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
 
         if (id == R.id.nav_dashboard) {
             Intent intent = new Intent(this, Dashboard.class); //opens the Questionnaire Menu Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
@@ -120,7 +118,6 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
 
         } else if (id == R.id.nav_help) {
             Intent intent = new Intent(this, Help.class); //opens the Help Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {

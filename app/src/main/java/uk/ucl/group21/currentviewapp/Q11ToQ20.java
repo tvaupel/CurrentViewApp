@@ -86,25 +86,21 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
             saveInput();
 
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
             saveInput();
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens a New Questionnaire Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             saveInput();
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             saveInput();
             Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
@@ -124,7 +120,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
         // saving the data to the local cache (local DB) first
         saveInput();
         Intent intent = new Intent(this, Q21ToQ30.class); //opens the next set of questions
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 

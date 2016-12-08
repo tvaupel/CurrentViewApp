@@ -77,17 +77,14 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
         } else if (id == R.id.nav_new_questionnaire) {
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             Intent intent = new Intent(this, Help.class); //opens the Help Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
@@ -101,21 +98,18 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     // Button activity for Questionnaire Menu (generate new Questionnaire)
     public void btnNewQuestion(View view){
         Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 
     // Button activity for previous Questionnaires
     public void btnPrevQuestion(View view){
         Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 
     // Button activity for opening the Help page
     public void btnHelp(View view){
         Intent intent = new Intent(this, Help.class); //opens the Help Activity
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 
@@ -123,7 +117,6 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     // Can also be discarded when no changeable settings are included.
     public void btnSetting(View view){
         Intent intent = new Intent(this, Setting.class); //opens the Setting Activity
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }
