@@ -396,7 +396,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/moderate23"
+                    android:id="@+id/moderate25"
                     android:layout_column="5"
                     android:layout_weight="1"
                     android:layout_gravity="center_horizontal" android:width="25dp"/>
@@ -453,7 +453,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/moderate22"
+                    android:id="@+id/moderate26"
                     android:layout_column="5"
                     android:layout_weight="1"
                     android:layout_gravity="center_horizontal" android:width="25dp"/>
