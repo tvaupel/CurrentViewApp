@@ -74,6 +74,7 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
 
         if (id == R.id.nav_dashboard) {
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
@@ -81,10 +82,12 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
 
         } else if (id == R.id.nav_previous_questionnaire) {
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             Intent intent = new Intent(this, Help.class); //opens the Help Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
@@ -97,10 +100,12 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
 
     public void btnOverview(View view){
         Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
     public void btnSectionBySection(View view){
         Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 

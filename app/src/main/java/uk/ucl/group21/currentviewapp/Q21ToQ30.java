@@ -82,23 +82,29 @@ public class Q21ToQ30 extends AppCompatActivity implements NavigationView.OnNavi
         if (id == R.id.nav_dashboard) {
             //save the current questionnaire inputs!
             saveInput();
-
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
             saveInput();
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens a New Questionnaire Activity
+
+            // Pop-up Window to ask for confirmation!
+
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             saveInput();
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             saveInput();
             Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
@@ -116,6 +122,7 @@ public class Q21ToQ30 extends AppCompatActivity implements NavigationView.OnNavi
 
     public void btnNextQ21to30(View view) {
         Intent intent = new Intent(this, Q31ToQ37.class); //opens the next set of questions
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }

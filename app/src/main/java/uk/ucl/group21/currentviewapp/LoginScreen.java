@@ -1,17 +1,10 @@
 package uk.ucl.group21.currentviewapp;
 
 import android.content.Intent;
-import android.support.annotation.XmlRes;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-
-import java.io.IOException;
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -20,6 +13,13 @@ public class LoginScreen extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
+
+    }
+
+    private void resetLogin(){
+        // resets the content of the EditText boxes.
+        EditText accNumber = (EditText) findViewById(R.id.acc_number);
+        EditText passwordInput = (EditText) findViewById(R.id.password_input);
 
     }
 

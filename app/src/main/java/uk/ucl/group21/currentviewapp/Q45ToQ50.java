@@ -84,21 +84,25 @@ public class Q45ToQ50 extends AppCompatActivity implements NavigationView.OnNavi
             saveInput();
 
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
             saveInput();
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens a New Questionnaire Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             saveInput();
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             saveInput();
             Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
@@ -116,6 +120,7 @@ public class Q45ToQ50 extends AppCompatActivity implements NavigationView.OnNavi
 
     public void btnDoneQ45to50(View view) {
         Intent intent = new Intent(this, QuestionnaireMenu.class); //diverts back to the Dashboard screen.
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }
