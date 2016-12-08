@@ -15,27 +15,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
-import android.content.SharedPreferences;
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.SeekBar;
-import android.widget.Toast;
 public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +33,11 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-//        this.loadpagedata();
+
     }
+
     public RadioGroup myRadioGroup;
+
     public void onRadioButtonClicked(View view) {
         RadioGroup mySelection = (RadioGroup) findViewById(R.id.myRadioGroup);
         int radioButtonId = mySelection.getCheckedRadioButtonId();
@@ -73,25 +52,6 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
                 break;
         }
     }
-
-//    private void loadpagedata()  {
-//        SharedPreferences sharedPreferences= this.getSharedPreferences("loadpagedata", Context.MODE_PRIVATE);
-//
-//        if(sharedPreferences!= null) {
-//
-//
-//            int checkedRadioButtonId = sharedPreferences.getInt("checkedRadioButtonId", R.id.none1);
-//
-//
-//            this.myRadioGroup.check(checkedRadioButtonId);
-//
-//        } else {
-//
-//        }
-//
-//    }
-
-
 
     public void btnNext(View view) {
         Intent intent = new Intent(this, Q11ToQ20.class); //opens the questionnaire activity
@@ -183,40 +143,5 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("Q1ToQ10 Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        AppIndex.AppIndexApi.start(client, getIndexApiAction());
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        AppIndex.AppIndexApi.end(client, getIndexApiAction());
-        client.disconnect();
-    }
 }
+
