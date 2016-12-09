@@ -39,7 +39,7 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
     public RadioGroup myRadioGroup;
 
     public void onRadioButtonClicked(View view) {
-        RadioGroup mySelection = (RadioGroup) findViewById(R.id.myRadioGroup);
+        RadioGroup mySelection = (RadioGroup) findViewById(R.id.Q1radiogroup);
         int radioButtonId = mySelection.getCheckedRadioButtonId();
         switch (radioButtonId) {
             case R.id.none1:

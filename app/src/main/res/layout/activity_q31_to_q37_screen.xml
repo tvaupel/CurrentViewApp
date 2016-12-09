@@ -101,6 +101,7 @@
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"/>
+
             </TableRow>
 
             <!-- Question 31 -->
@@ -114,17 +115,26 @@
                 android:text="@string/_31"
                 android:id="@+id/textView1"
                 android:layout_column="1"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 android:textAlignment="center" android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/q31"
-                android:id="@+id/textView2"
-                android:layout_column="2"
-                android:layout_weight="2"
-                android:textSize="18sp" android:maxWidth="300dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/q31"
+                    android:id="@+id/textView2"
+                    android:layout_column="2"
+                    android:layout_weight="2"
+                    android:textSize="18sp" android:maxWidth="300dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Q31radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -149,7 +159,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:width="25dp" android:layout_gravity="center_horizontal"/>
-
+                </RadioGroup>
         </TableRow>
 
             <!-- Question 32 -->
@@ -162,7 +172,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/_32"
                     android:layout_column="1"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -172,6 +182,14 @@
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2" android:maxWidth="300dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Q32radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -193,6 +211,7 @@
                     android:layout_column="5"
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
+                </RadioGroup>
             </TableRow>
 
             <!-- Question 33 -->
@@ -206,7 +225,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/_33"
                     android:layout_column="1"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -216,6 +235,14 @@
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2" android:maxWidth="300dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Q33radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -237,6 +264,7 @@
                     android:layout_column="5"
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
+                </RadioGroup>
             </TableRow>
 
             <!-- Question 34 -->
@@ -250,8 +278,9 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/_34"
                     android:layout_column="1"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -260,6 +289,14 @@
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2" android:maxWidth="300dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Q34radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -281,6 +318,7 @@
                     android:layout_column="5"
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
+                </RadioGroup>
             </TableRow>
             <!-- Question 35 -->
             <TableRow
@@ -293,7 +331,7 @@
                     android:text="@string/_35"
                     android:id="@+id/textView3"
                     android:layout_column="1"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -304,6 +342,14 @@
                     android:layout_column="2"
                     android:layout_weight="2"
                     android:textSize="18sp" android:maxWidth="300dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Q35adiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -328,7 +374,7 @@
                     android:layout_weight="1"
                     android:textAlignment="center"
                     android:width="25dp" android:layout_gravity="center_horizontal"/>
-
+                </RadioGroup>
             </TableRow>
 
             <!-- Question 36 -->
@@ -341,7 +387,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/_36"
                     android:layout_column="1"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -351,6 +397,14 @@
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2" android:maxWidth="300dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Q36radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -372,6 +426,7 @@
                     android:layout_column="5"
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
+                </RadioGroup>
             </TableRow>
 
             <!-- Question 37 -->
@@ -385,7 +440,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/_37"
                     android:layout_column="1"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -395,6 +450,14 @@
                     android:layout_column="2"
                     android:textSize="18sp"
                     android:layout_weight="2" android:maxWidth="300dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Q37radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -416,6 +479,7 @@
                     android:layout_column="5"
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
+                </RadioGroup>
             </TableRow>
 
         </TableLayout>
