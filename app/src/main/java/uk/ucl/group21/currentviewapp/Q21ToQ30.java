@@ -303,7 +303,6 @@ public class Q21ToQ30 extends AppCompatActivity implements NavigationView.OnNavi
     }
 
 
-
     public void info21(View view) {
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
         myAlert.setMessage("21. Family relationship difficulties: \n\n" +
