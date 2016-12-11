@@ -43,12 +43,9 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
-
         Q11rg = (RadioGroup) findViewById(R.id.Q11radiogroup);
         Q12rg = (RadioGroup) findViewById(R.id.Q12radiogroup);
         Q13rg = (RadioGroup) findViewById(R.id.Q13radiogroup);
-
         Q14rg = (RadioGroup) findViewById(R.id.Q14radiogroup);
         Q15rg = (RadioGroup) findViewById(R.id.Q15radiogroup);
         Q16rg = (RadioGroup) findViewById(R.id.Q16radiogroup);
@@ -60,14 +57,11 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
         /*to display progress value send by the previous screen*/
         pb = (ProgressBar) findViewById(R.id.progress1);
 
-
         Bundle bundle = getIntent().getExtras().getBundle("progressBundle");
 
         int progressValue = bundle.getInt("progressValue");
 
         pb.setProgress(progressValue);
-
-
 
         Q11rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
@@ -80,7 +74,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
         Q12rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
                                             @Override
@@ -95,7 +88,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                         }
 
         );
-
         Q13rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
 
@@ -110,7 +102,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
         Q14rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
 
@@ -124,7 +115,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
         Q15rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
 
@@ -138,8 +128,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
-
         Q16rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
 
@@ -152,7 +140,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
         Q17rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
                                             @Override
@@ -165,7 +152,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
         Q18rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
                                             @Override
@@ -178,7 +164,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
         Q19rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
                                             @Override
@@ -191,7 +176,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                             }
                                         }
         );
-
         Q20rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
                                              @Override
@@ -204,11 +188,7 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
                                              }
                                          }
         );
-
-
     }
-
-
 
     public void btnNextQ11to20(View view) {
         // saving the data to the local cache (local DB) first
@@ -224,7 +204,6 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
 
         startActivity(intent);
     }
-
 
 
     ///////////////////////////////////////////////////////
