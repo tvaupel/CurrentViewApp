@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,14 +12,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="uk.ucl.group21.currentviewapp.Q1ToQ10">
 
-    <Button
-        android:text="@string/Next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="64dp"
-        android:layout_marginBottom="64dp" android:onClick="btnNext" android:id="@+id/NextQ1"/>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,25 +20,21 @@
         android:scrollbars="vertical|horizontal"
         android:fillViewport="true" android:layout_marginLeft="0dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp">
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/table_q1_q10">
+            android:id="@+id/table_q1_q10"
+            android:stretchColumns="*">
+
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/Empty"
-                    android:layout_column="1"
-                    android:layout_weight="1"
-                    android:textColor="#ffffff"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -54,16 +44,18 @@
                     android:layout_column="2"
                     android:layout_weight="2"
                     android:textSize="24sp"/>
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/None"
                     android:layout_column="3"
-                    android:layout_weight="2"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:layout_gravity="center_horizontal" android:minWidth="50dp"/>
+                    android:layout_weight="0"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,9 +63,9 @@
                     android:text="@string/Mild"
                     android:layout_column="4"
                     android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:layout_gravity="center_horizontal" android:minWidth="50dp"/>
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -81,8 +73,7 @@
                     android:text="@string/Moderate"
                     android:layout_column="5"
                     android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:layout_gravity="center_horizontal" android:textScaleX="0.8"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -91,8 +82,7 @@
                     android:text="@string/Severe"
                     android:layout_column="6"
                     android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:layout_gravity="center_horizontal" android:minWidth="50dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -101,8 +91,18 @@
                     android:text="@string/Not_Known"
                     android:layout_column="7"
                     android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal" android:textScaleX="0.8"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="More Info"
+                    android:textStyle="bold"
+                    android:layout_column="8"
+                    android:layout_weight="1"
                     android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:layout_gravity="center_horizontal" android:textScaleX="0.8"/>
             </TableRow>
 
@@ -127,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:id="@+id/textView1"
                     android:layout_column="1"
                     android:layout_weight="0"
@@ -157,7 +157,7 @@
                         android:layout_column="3"
                         android:textAlignment="center"
                         android:layout_weight="1" android:layout_gravity="center_horizontal" android:width="25dp"
-                        android:onClick="onRadioButtonClicked"/>
+                        />
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -167,7 +167,7 @@
                         android:layout_weight="1"
                         android:textAlignment="center"
                         android:layout_gravity="center_horizontal" android:width="25dp"
-                        android:onClick="onRadioButtonClicked"/>
+                        />
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -176,8 +176,8 @@
                         android:layout_column="5"
                         android:layout_weight="1"
                         android:textAlignment="center"
-                        android:layout_gravity="center_horizontal" android:width="25dp"
-                        android:onClick="onRadioButtonClicked"/>
+                        android:layout_gravity="center_horizontal"
+                         android:width="25dp" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -187,7 +187,7 @@
                         android:layout_weight="1"
                         android:textAlignment="center"
                         android:layout_gravity="center_horizontal" android:width="25dp"
-                        android:onClick="onRadioButtonClicked"/>
+                        />
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -197,9 +197,23 @@
                         android:layout_weight="1"
                         android:layout_marginRight="5dp" android:layout_gravity="center_horizontal"
                         android:width="25dp"
-                        android:onClick="onRadioButtonClicked"/>
+                        />
 
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                <Button
+                    android:text="i"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+
+                    android:layout_column="8"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp" android:onClick="info1" android:id="@+id/info1"/>
+                </LinearLayout>
             </TableRow>
 
             <TableRow
@@ -210,7 +224,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="2"
+                    android:text="@string/_2"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -270,6 +284,21 @@
                         android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                         android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info2" android:id="@+id/info2"/>
+                </LinearLayout>
             </TableRow>
 
             <TableRow
@@ -280,7 +309,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="3"
+                    android:text="@string/_3"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -341,6 +370,21 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info3" android:id="@+id/info3"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- Question 4 -->
@@ -352,7 +396,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="4"
+                    android:text="@string/_4"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -413,6 +457,21 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info4" android:id="@+id/info4"/>
+                </LinearLayout>
             </TableRow>
 
             <TableRow
@@ -422,7 +481,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="5"
+                    android:text="@string/_5"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -479,6 +538,21 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info5" android:id="@+id/info5"/>
+                </LinearLayout>
             </TableRow>
 
             <TableRow
@@ -488,7 +562,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="6"
+                    android:text="@string/_6"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -545,6 +619,21 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info6" android:id="@+id/info6"/>
+                </LinearLayout>
             </TableRow>
 
             <TableRow
@@ -555,7 +644,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="7"
+                    android:text="@string/_7"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -616,6 +705,21 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info7" android:id="@+id/info7"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- Question 8 -->
@@ -627,7 +731,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="8"
+                    android:text="@string/_8"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -688,6 +792,21 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info8" android:id="@+id/info8"/>
+                </LinearLayout>
             </TableRow>
 
             <TableRow
@@ -698,7 +817,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="9"
+                    android:text="@string/_9"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -759,6 +878,21 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info9" android:id="@+id/info9"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- Question 10 -->
@@ -770,7 +904,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="10"
+                    android:text="@string/_10"
                     android:layout_column="1"
                     android:layout_weight="0"
                     android:textAlignment="center" android:textSize="18sp"/>
@@ -831,9 +965,59 @@
                     android:layout_marginEnd="5dp" android:layout_gravity="center_horizontal"
                     android:width="25dp"/>
                 </RadioGroup>
+
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info10" android:id="@+id/info10"/>
+                </LinearLayout>
             </TableRow>
 
 
+      <TableRow>
+
+
+          <ProgressBar
+              style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:background="#000"
+              android:layout_alignParentRight="true"
+              android:id="@+id/progress1"
+              android:max="100"
+              android:padding="20dp"
+              android:progress="100"
+              android:maxWidth="100dp"
+              android:layout_column="2"
+              android:layout_span="8"
+              android:layout_weight="1"
+              android:progressDrawable="@android:drawable/progress_horizontal"
+              android:layout_marginBottom="2dp"
+              />
+
+          <Button
+              android:text="@string/Next"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="0dp"
+              android:layout_marginLeft="200dp"
+              android:layout_column="8"
+              android:layout_weight="1"
+              android:layout_marginBottom="2dp" android:onClick="btnNext" android:id="@+id/btnNext"/>
+
+      </TableRow>
         </TableLayout>
     </ScrollView>
 </RelativeLayout>

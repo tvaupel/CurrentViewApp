@@ -12,15 +12,6 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="uk.ucl.group21.currentviewapp.Q31ToQ37">
 
-    <Button
-        android:text="@string/Next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="64dp"
-        android:layout_marginBottom="64dp" android:onClick="btnNextQ31to37" android:id="@+id/NextQ4"/>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,18 +32,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/Empty"
-                    android:layout_column="1"
-                    android:layout_weight="1"
-                    android:textColor="#ffffff"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/Selected_Complecity_Factors"
                     android:textStyle="bold"
                     android:layout_column="2"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:textSize="24sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -62,7 +45,7 @@
                     android:layout_column="3"
                     android:layout_weight="1"
                     android:textAlignment="inherit"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:layout_gravity="center_horizontal" android:minWidth="50dp" android:paddingLeft="5dp"
                     android:paddingRight="5dp"/>
                 <TextView
@@ -73,7 +56,7 @@
                     android:layout_column="4"
                     android:layout_weight="1"
                     android:textAlignment="inherit"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:layout_gravity="center_horizontal" android:minWidth="50dp" android:paddingLeft="15dp"
                     android:paddingRight="5dp"/>
                 <TextView
@@ -83,9 +66,19 @@
                     android:text="@string/Not_Known"
                     android:layout_column="5"
                     android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="More Info"
+                    android:textStyle="bold"
+                    android:layout_column="8"
+                    android:layout_weight="0"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal" android:textScaleX="0.8"/>
 
             </TableRow>
 
@@ -160,6 +153,20 @@
                 android:textAlignment="center"
                 android:width="25dp" android:layout_gravity="center_horizontal"/>
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info31" android:id="@+id/info31"/>
+                </LinearLayout>
         </TableRow>
 
             <!-- Question 32 -->
@@ -212,6 +219,20 @@
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info32" android:id="@+id/info32"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- Question 33 -->
@@ -265,6 +286,20 @@
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info33" android:id="@+id/info33"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- Question 34 -->
@@ -319,6 +354,20 @@
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info34" android:id="@+id/info34"/>
+                </LinearLayout>
             </TableRow>
             <!-- Question 35 -->
             <TableRow
@@ -344,7 +393,7 @@
                     android:textSize="18sp" android:maxWidth="300dp"/>
 
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/Q35adiogroup"
+                    android:id="@+id/Q35radiogroup"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:orientation="horizontal"
@@ -375,6 +424,20 @@
                     android:textAlignment="center"
                     android:width="25dp" android:layout_gravity="center_horizontal"/>
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info35" android:id="@+id/info35"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- Question 36 -->
@@ -427,6 +490,20 @@
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info36" android:id="@+id/info36"/>
+                </LinearLayout>
             </TableRow>
 
             <!-- Question 37 -->
@@ -480,7 +557,72 @@
                     android:layout_weight="1"
                     android:width="25dp" android:layout_gravity="center_horizontal" android:textAlignment="center"/>
                 </RadioGroup>
+                <LinearLayout android:orientation="horizontal">
+
+                    <Button
+                        android:text="i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+
+                        android:layout_column="8"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp" android:onClick="info37" android:id="@+id/info37"/>
+                </LinearLayout>
             </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Empty"
+                    android:textStyle=""
+                    android:layout_column="2"
+                    android:layout_weight="3"
+                    android:textSize="90sp"/>
+
+            </TableRow>
+            <TableRow>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#000"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/progress1"
+                    android:max="100"
+                    android:padding="20dp"
+                    android:progress="100"
+                    android:maxWidth="100dp"
+                    android:layout_column="2"
+                    android:layout_span="8"
+                    android:layout_weight="1"
+                    android:progressDrawable="@android:drawable/progress_horizontal"
+                    android:layout_marginBottom="2dp"
+                    />
+
+
+                <Button
+                    android:text="@string/Next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_column="8"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:onClick="btnNextQ31to37" android:id="@+id/NextQ4"/>
+            </TableRow>
+
+
 
         </TableLayout>
     </ScrollView>
