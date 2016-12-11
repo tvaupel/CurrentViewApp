@@ -42,7 +42,6 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
         Q38rg = (RadioGroup) findViewById(R.id.Q38radiogroup);
         Q39rg = (RadioGroup) findViewById(R.id.Q39radiogroup);
         Q40rg = (RadioGroup) findViewById(R.id.Q40radiogroup);
-
         Q41rg = (RadioGroup) findViewById(R.id.Q41radiogroup);
         Q42rg = (RadioGroup) findViewById(R.id.Q42radiogroup);
         Q43rg = (RadioGroup) findViewById(R.id.Q43radiogroup);
@@ -118,7 +117,6 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
 
         Q42rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
-
                                              @Override
                                              public void onCheckedChanged(RadioGroup radioGroup, int selectedId) {
 
@@ -133,7 +131,6 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
 
         Q43rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
-
                                              @Override
                                              public void onCheckedChanged(RadioGroup radioGroup, int selectedId) {
                                                  if (!Q43rgAnswered) {
@@ -145,11 +142,11 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
         );
 
         Q44rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-
                                              @Override
                                              public void onCheckedChanged(RadioGroup radioGroup, int selectedId) {
 
-                                                 if (!Q44rgAnswered) {
+                                                 if (!Q44rgA
+                                                     nswered) {
                                                      pb.setProgress(pb.getProgress() + 2);
                                                      Q44rgAnswered = true;
                                                  }
@@ -161,7 +158,6 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
     }
 
     public void btnNextQ38to44(View view) {
-
      /* **carry forward of the progress bar*/
         saveInput();
 
