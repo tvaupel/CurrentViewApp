@@ -157,7 +157,6 @@ public class Q31ToQ37 extends AppCompatActivity implements NavigationView.OnNavi
                                          }
         );
 
-
     }
 
     public void btnNextQ31to37(View view) {
