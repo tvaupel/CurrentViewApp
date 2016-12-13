@@ -203,23 +203,6 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
 
     }
 
-    /*public RadioGroup myRadioGroup;
-
-    public void onRadioButtonClicked(View view) {
-        RadioGroup mySelection = (RadioGroup) findViewById(R.id.Q1radiogroup);
-        int radioButtonId = mySelection.getCheckedRadioButtonId();
-        switch (radioButtonId) {
-            case R.id.none1:
-                RadioButton rbu1 = (RadioButton) findViewById(R.id.none2);
-                rbu1.setChecked(true);
-                break;
-            case R.id.mild1:
-                RadioButton rbu2 = (RadioButton) findViewById(R.id.none3);
-                rbu2.setChecked(true);
-                break;
-        }
-    }*/
-
 
     public void btnNext(View view) {
         saveInput();

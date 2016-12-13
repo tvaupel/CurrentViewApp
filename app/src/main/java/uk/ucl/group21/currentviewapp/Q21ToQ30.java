@@ -403,7 +403,7 @@ public class Q21ToQ30 extends AppCompatActivity implements NavigationView.OnNavi
     public void info30(View view) {
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
         myAlert.setMessage("30. Adjustment to health issues: \n\n" +
-                "CYP experiencing emotional and/or behavioural di culties following diagnosis of health condition " +
+                "CYP experiencing emotional and/or behavioural difficulties following diagnosis of health condition " +
                 "in self or significant other. This may also include on-going adjustment difficulties.")
 
                 .create();

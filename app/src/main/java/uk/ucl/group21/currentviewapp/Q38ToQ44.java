@@ -261,7 +261,7 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
     public void info38(View view) {
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
         myAlert.setMessage("38. Deemed “child in need” of social service input: \n\n" +
-                "CYP has been identi ed by professionals as needing local authority services to achieve " +
+                "CYP has been identified by professionals as needing local authority services to achieve " +
                 "or maintain a reasonable standard of health or development and/or to prevent significant or further " +
                 "harm to health or development. This includes CYP who are classed as disabled. " +
                 "Include CYP who are deemed in need of local authority input but are currently below " +
@@ -305,7 +305,7 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
         myAlert.setMessage("42. Parental health issues: \n\n" +
                 "At least one primary care giver is currently su ering from a diagnosable mental health problem(s)," +
-                " moderate, severe or profound learning disability, signiffucant substance abuse and/or " +
+                " moderate, severe or profound learning disability, significant substance abuse and/or " +
                 "significant cant physical health issues (e.g. parent/carer in a wheelchair).")
 
                 .create();
@@ -324,7 +324,7 @@ public class Q38ToQ44 extends AppCompatActivity implements NavigationView.OnNavi
     public void info44(View view) {
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
         myAlert.setMessage("44. Living in financial difficulty: \n\n" +
-                "Family is deemed to be in considerable debt or under  nancial stress requiring local " +
+                "Family is deemed to be in considerable debt or under financial stress requiring local " +
                 "authority assistance to meet basic needs (e.g. CYP is in receipt of free school meals).")
 
                 .create();

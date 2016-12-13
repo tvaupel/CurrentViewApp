@@ -315,7 +315,7 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
     public void info11(View view) {
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
         myAlert.setMessage("11. Extremes of mood (Bipolar disorder): \n\n" +
-                "CYP has (either reported or observed) di culties a ecting feelings and behaviour characterised by major mood changes." )
+                "CYP has (either reported or observed) difficulties affecting feelings and behaviour characterised by major mood changes." )
 
                 .create();
         myAlert.show();
@@ -334,7 +334,7 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
 
     public void info13(View view) {
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
-        myAlert.setMessage("13. Drug and alcohol di culties (Substance abuse): \n\n" +
+        myAlert.setMessage("13. Drug and alcohol difficulties (Substance abuse): \n\n" +
                 "CYP is addicted to and/or using drugs/alcohol in a harmful manner. ")
 
                 .create();
@@ -353,7 +353,7 @@ public class Q11ToQ20 extends AppCompatActivity implements NavigationView.OnNavi
 
     public void info15(View view) {
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
-        myAlert.setMessage("15. Behavioural di culties (CD or ODD): \n\n" +
+        myAlert.setMessage("15. Behavioural difficulties (CD or ODD): \n\n" +
                 "Repeated and persistent challenging or out of control behaviour, may include behaviour that is violent, aggressive and harmful to others. " +
                 "Typical behaviours may include excessive fighting, bullying, cruelty to people or animals, stealing, truancy, tantrums, disobedience and  re-setting.")
 
