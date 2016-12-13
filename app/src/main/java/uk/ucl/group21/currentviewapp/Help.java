@@ -74,17 +74,14 @@ public class Help extends AppCompatActivity implements NavigationView.OnNavigati
 
         if (id == R.id.nav_dashboard) {
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {

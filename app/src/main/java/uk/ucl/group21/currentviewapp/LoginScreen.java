@@ -23,6 +23,13 @@ public class LoginScreen extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        //what it should do on back
+        System.out.println("back pressed!");
+    }
+
+
     public void LogIn(View view){
 
         EditText accNumber = (EditText) findViewById(R.id.acc_number);
@@ -31,6 +38,7 @@ public class LoginScreen extends AppCompatActivity {
             if( // Insert comparison with database here
                 accNumber.getText().toString().equals("user")  && passwordInput.getText().toString().equals("1234")) {
                 Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
             else {
