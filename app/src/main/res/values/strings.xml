@@ -172,4 +172,9 @@
         <item>Date Created: Oldest-Newest</item>
     </string-array>
 
+    <!-- Help Page -->
+
+    <string name="Help_Title">Help Page</string>
+
+
 </resources>
