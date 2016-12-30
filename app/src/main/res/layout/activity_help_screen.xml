@@ -26,21 +26,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="20dp"/>
             <TextView
-                    android:text="Creating a new Questionnaire"
+                    android:text="@string/creating_a_new_questionnaire"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView6"/>
             <Space
                     android:layout_width="match_parent"
                     android:layout_height="20dp"/>
             <TextView
-                    android:text="To start a new questionnaire, first click on the Qustionnaire Menu button. In the questionnaire main menu you can then chose to start a new questionnaire with the Section by Section method or with the Overview."
+                    android:text="@string/Creating_New_Questionnaire_Help"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView7"/>
             <Space
                     android:layout_width="match_parent"
                     android:layout_height="20dp"/>
             <TextView
-                    android:text="Looking at previous Questionnaires"
+                    android:text="@string/looking_at_previous_questionnaires"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView8"/>
             <Space

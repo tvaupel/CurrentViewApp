@@ -175,6 +175,12 @@
     <!-- Help Page -->
 
     <string name="Help_Title">Help Page</string>
+    <string name="Creating_New_Questionnaire_Help">To start a new questionnaire, first click on the Qustionnaire Menu
+        button. In the questionnaire main menu you can then chose to start a new questionnaire with the Section by
+        Section method or with the Overview.
+    </string>
+    <string name="creating_a_new_questionnaire">Creating a new Questionnaire</string>
+    <string name="looking_at_previous_questionnaires">Looking at previous Questionnaires</string>
 
 
 </resources>
