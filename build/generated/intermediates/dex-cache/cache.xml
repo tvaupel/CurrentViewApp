@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.6.1_21d55a60c2fa8cd616969234beb092a52259524e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_af3ff41e4f7c1efd311bba3c56bce336f57a0db8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_ffc80ba95541dee200c57b622f5604b38ec05405\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_b2b154220e7234a2fef471d6e72801e545f463e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="32a27f0d7779a77fc8b02c72c17353e3b4efdfec">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a93193c1d14a6287a2a20b78d19110f9cc107bdd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_3d26fba65a6c16fdc5ccdf8cfb55c3e8ab246e73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_eea56e470e1096ce2d5b1e87bbe312f5d163184a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="86b174869bed436c55b8905236a45c20145fd8f7">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e737a7bbc4897a6cf4c22f384a010a2df03c8d55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.github.scottyab\showhidepasswordedittext\0.6\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="b21b96a99ee47704701ab108a3408ed3b6c08279">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.scottyab-showhidepasswordedittext-0.6_ff40306acd2e430154d0b5d6296a75d3917f8b5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_9fdc9961e7c809d242d4396a44f9221085782ad7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_1261b1d2f41c0c8a7c9baa05c73ae8db99696599\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_67a544808a9d27d703ce4b958c067f2863c42ba9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\user\Documents\CurrentViewApp-Jai_working_4\CurrentViewApp-Jai_working_4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_9a8c146eea17fa2ca08fcd07f981d6ae107b6692\classes.dex" />
+    </item>
+
+</items>
