@@ -57,21 +57,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_955abb53bdd901f36dd3244f03d22f8d89604158/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
         <dex dex="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_24269f3021b9f52a2df142a5c2272b7cd526b0ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_955abb53bdd901f36dd3244f03d22f8d89604158/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8cf52b56f5976cbb953dc472ca56dde55d6a6327">
+        sha1="c95149042ab1597e4bc501bd55283ca01766110d">
         <dex dex="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c85f80bd853346d107c2f11025565133f76b49d0/classes.dex" />
     </item>
     <item
@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="85cc403fdff29565357f81aad10cd20cb44d9685">
+        sha1="2e4824c50fc4c113f974d919f2893aee51679461">
         <dex dex="/Users/Tom/IntelliJIDEAProjects/CurrentViewApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_67b7b31cdb1494615b222da062b93066cbd3e052/classes.dex" />
     </item>
     <item
