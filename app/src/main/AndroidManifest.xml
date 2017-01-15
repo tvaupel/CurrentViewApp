@@ -43,6 +43,11 @@
                 android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
+            android:name=".QuestionnaireOverview"
+            android:label="Questionnaire Overview"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
                 android:name=".Q1ToQ10"
                 android:label="Questions 1-10"
                 android:theme="@style/AppTheme.NoActionBar"/>
