@@ -1,12 +1,17 @@
 package uk.ucl.group21.currentviewapp;
 
 import android.content.Intent;
+import android.database.DataSetObservable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
 public class LoginScreen extends AppCompatActivity {
+    DatabaseHelper myDB;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +19,8 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
         resetLogin();
+        myDB = new DatabaseHelper(this);
+
     }
 
     private void resetLogin(){
@@ -38,6 +45,7 @@ public class LoginScreen extends AppCompatActivity {
         EditText passwordInput = (EditText) findViewById(R.id.password_input);
         try {
             if( // Insert comparison with database here
+
                 accNumber.getText().toString().equals("user")  && passwordInput.getText().toString().equals("1234")) {
                 Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

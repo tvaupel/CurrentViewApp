@@ -13,13 +13,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class QuestionnaireDetails extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     //create variable for our text and button ;
-    EditText editID, editName,editDOB,editDate, editTime,editReasonofCompleting;
-    Button button;
-
+    EditText editID, editName, editDOB, editDate, editTime, editReason;
+    Button btnOverview, btnSection;
+    DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,8 @@ public class QuestionnaireDetails extends AppCompatActivity implements Navigatio
         navigationView.setNavigationItemSelectedListener(this);
 
 
+        myDb = new DatabaseHelper(QuestionnaireDetails.this); // calls the constructor
+
 
         // *do this for  all variables created
         editID = (EditText) findViewById (R.id.editText_NHSID);
@@ -46,11 +49,75 @@ public class QuestionnaireDetails extends AppCompatActivity implements Navigatio
         editDOB = (EditText) findViewById (R.id.editText_DOB);
         editDate = (EditText) findViewById (R.id.editText_DATE);
         editTime = (EditText) findViewById (R.id.editText_TIME);
-        editReasonofCompleting = (EditText) findViewById (R.id.editText_REASONofCOMPLETING);
-        button = (Button) findViewById(R.id.button);
-
-
+        editReason = (EditText) findViewById (R.id.editText_REASONofCOMPLETING);
+        btnOverview = (Button) findViewById(R.id.btnOverview);
+        btnSection = (Button) findViewById(R.id.btnSection);
+        AddData();
     }
+
+    public void AddData() {
+        btnOverview.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+
+                        boolean isInserted = myDb.insertQuestionnaireDetail (
+                                editName.getText().toString(),
+                                editID.getText().toString(),
+                                editDOB.getText().toString(),
+                                editDate.getText().toString(),
+                                editReason.getText().toString() );
+
+                        if (isInserted) {
+                            Toast.makeText(QuestionnaireDetails.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                            // If data insertion is successful
+                            ////////////////
+                            //////////////
+                            // OVERVIEW LINK
+                            //////////////
+                            ////////////////
+                            Intent real = new Intent(QuestionnaireDetails.this,Q1ToQ10.class); //opens the DatabaseMainActivity
+                            startActivity(real);
+                        }
+                        else {
+                            Toast.makeText(QuestionnaireDetails.this, "Data Not Inserted", Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                }
+        );
+
+
+        btnSection.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+
+                        boolean isInserted = myDb.insertQuestionnaireDetail (
+                                editName.getText().toString(),
+                                editID.getText().toString(),
+                                editDOB.getText().toString(),
+                                editDate.getText().toString(),
+                                editReason.getText().toString()
+                        );
+
+                        if (isInserted) {
+                            Toast.makeText(QuestionnaireDetails.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                            // If data insertion is successful
+                            Intent real = new Intent(QuestionnaireDetails.this,Q1ToQ10.class); //opens the DatabaseMainActivity
+                            startActivity(real);
+                        }
+                        else {
+                            Toast.makeText(QuestionnaireDetails.this, "Data Not Inserted", Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                }
+        );
+    }
+
+
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
