@@ -7,3 +7,10 @@ app/src/main/main.iml
 app/src/test/test.iml
 build/
 out/
+.idea/compiler.xml
+.idea/copyright/
+.idea/encodings.xml
+.idea/runConfigurations.xml
+gen/
+local.properties
+projectFilesBackup/
