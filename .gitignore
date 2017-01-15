@@ -1,5 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
-<<<<<<< HEAD
+
 *.iml
 .gradle/
 build.gradle
@@ -7,5 +7,6 @@ build.gradle
 gradle/
 /local.properties
 .idea/
+.idea/misc.xml
 /build
 out/
