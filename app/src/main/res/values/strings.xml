@@ -172,4 +172,26 @@
         <item>Date Created: Oldest-Newest</item>
     </string-array>
 
+    <!-- Help Page -->
+
+    <string name="Help_Title">Help Page</string>
+    <string name="Creating_New_Questionnaire_Help">To start a new questionnaire, first click on the Questionnaire Menu
+        button. Once inside the questionnaire main menu you can then choose to start a new questionnaire with the Section by
+        Section method or with the Overview method.\n\nThe Section by Section method allows you to fill out the questionnaire in a very easy way, as the app will guide you
+        through blocks of questions that are related to each other. The progress bar will indicate how many questions of each
+        block have been completed and in case you forgot a question, a system notification will let you know about it.\n\nThe Overview method is tailored towards the big picture people. By using this method you can fill out the whole questionnaire
+        on one single screen. Not a lot of clicking and moving around. You simply select the checkboxes and complete your questionnaire.
+        Similar to the Section by Section method, you too will have a progress bar that indicates how many questions are still waiting
+        to be answered.\n\nOnce you are done with the questionnaire, the app will save it and you can easily access the
+        questionnaire through the Previous Questionnaire Menu any time.
+    </string>
+    <string name="creating_a_new_questionnaire">Creating a new Questionnaire</string>
+    <string name="looking_at_previous_questionnaires">Looking at previous Questionnaires</string>
+    <string name="help_previous_questionnaires">To look at previous questionnaires, you simply go to the Previous
+        Questionnaire Menu and select from the questionnaires that are shown. If you are having difficulties finding the
+        questionnaire, then make use of the sorting functions so that you can easily locate the questionnaire that you
+        are interested in.
+    </string>
+
+
 </resources>

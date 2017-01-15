@@ -106,10 +106,10 @@ public class Q31ToQ37 extends AppCompatActivity implements NavigationView.OnNavi
 
         } else if (id == R.id.nav_logout) {
             saveInput();
-
-            // popup window to ask for confirmation
-
-            System.exit(0);
+            Intent intent = new Intent(this, LoginScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            super.finish();
+            startActivity(intent);
         }
 
         drawer.closeDrawer(GravityCompat.START);

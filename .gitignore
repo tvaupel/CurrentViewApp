@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
+
 *.iml
+.gradle/
+build.gradle
+.
+gradle/
+/local.properties
+.idea/
+.idea/misc.xml
 /build
 out/
-app/app.iml
-
-.gradle/
-gradle/
-
-/local.properties
-
-/.idea/workspace.xml
-
-.idea/
-
-.DS_Store
-
-/captures
-

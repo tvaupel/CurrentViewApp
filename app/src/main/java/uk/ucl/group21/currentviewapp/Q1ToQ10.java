@@ -91,32 +91,36 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
             saveInput();
             // popup window to ask for confirmation
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
             saveInput();
             // popup window to ask for confirmation
             Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
             saveInput();
             // popup window to ask for confirmation
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             saveInput();
             // popup window to ask for confirmation
             Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
             saveInput();
-
-            // popup window to ask for confirmation
-
-            System.exit(0);
+            Intent intent = new Intent(this, LoginScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            super.finish();
+            startActivity(intent);
         }
 
         drawer.closeDrawer(GravityCompat.START);
