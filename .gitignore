@@ -8,3 +8,4 @@ gradle/
 .idea/
 /build
 out/
+app/app.iml
