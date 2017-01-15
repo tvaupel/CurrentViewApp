@@ -13,20 +13,22 @@ public class LoginScreen extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-
+        resetLogin();
     }
 
     private void resetLogin(){
         // resets the content of the EditText boxes.
         EditText accNumber = (EditText) findViewById(R.id.acc_number);
         EditText passwordInput = (EditText) findViewById(R.id.password_input);
+        accNumber.setText("");
+        passwordInput.setText("");
 
     }
 
     @Override
     public void onBackPressed() {
         //what it should do on back
-        System.out.println("back pressed!");
+        System.exit(1);
     }
 
 
@@ -40,6 +42,7 @@ public class LoginScreen extends AppCompatActivity {
                 Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                resetLogin();
             }
             else {
                 System.out.println("Error: Wrong username or password");

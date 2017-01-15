@@ -121,7 +121,10 @@ public class PreviousQuestionnaires extends AppCompatActivity implements OnItemS
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
-
+            Intent intent = new Intent(this, LoginScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            super.finish();
+            startActivity(intent);
         }
 
         drawer.closeDrawer(GravityCompat.START);

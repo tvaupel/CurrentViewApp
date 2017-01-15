@@ -1,23 +1,30 @@
 package uk.ucl.group21.currentviewapp;
 
-import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class QuestionnaireDetails extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+    //create variable for our text and button ;
+    EditText editID, editName,editDOB,editDate, editTime,editReasonofCompleting;
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q1_to_q10);
+        setContentView(R.layout.activity_questionnaire_details);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -30,23 +37,20 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
+        // *do this for  all variables created
+        editID = (EditText) findViewById (R.id.editText_NHSID);
+        editName = (EditText) findViewById (R.id.editText_CYPName);
+        editDOB = (EditText) findViewById (R.id.editText_DOB);
+        editDate = (EditText) findViewById (R.id.editText_DATE);
+        editTime = (EditText) findViewById (R.id.editText_TIME);
+        editReasonofCompleting = (EditText) findViewById (R.id.editText_REASONofCOMPLETING);
+        button = (Button) findViewById(R.id.button);
+
+
     }
-
-    public void btnNext(View view){
-        Intent intent = new Intent(this, Q11ToQ20.class); //opens the questionnaire activity
-        startActivity(intent);
-    }
-
-    ///////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////
-    public void saveInput(){
-
-        // Save the input of the questionnaire up till here
-
-    }
-    ///////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -87,36 +91,21 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         if (id == R.id.nav_dashboard) {
-            //save the current questionnaire inputs!
-            saveInput();
-            // popup window to ask for confirmation
-            Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
-            saveInput();
-            // popup window to ask for confirmation
-            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Dashboard Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+            drawer.closeDrawer(GravityCompat.START);
 
         } else if (id == R.id.nav_previous_questionnaire) {
-            saveInput();
-            // popup window to ask for confirmation
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
-            saveInput();
-            // popup window to ask for confirmation
-            Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            Intent intent = new Intent(this, Help.class); //opens the Help Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
-            saveInput();
             Intent intent = new Intent(this, LoginScreen.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             super.finish();
@@ -125,5 +114,14 @@ public class Q1ToQ10 extends AppCompatActivity implements NavigationView.OnNavig
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void btnOverview(View view){
+        Intent intent = new Intent(this, QuestionnaireDetails.class); //opens the questionnaire activity
+        startActivity(intent);
+    }
+    public void btnSectionBySection(View view){
+        Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
+        startActivity(intent);
     }
 }
