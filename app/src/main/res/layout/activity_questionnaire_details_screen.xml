@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="uk.ucl.group21.currentviewapp.QuestionnaireDetails"
+    android:layout_marginTop="60dp"
+    android:paddingTop="60dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!-- NHS TextView and the TextEdit Box-->
+    <TextView
+        android:id="@+id/txtNHS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/nhs_id"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/editText_NHSID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtNHS"
+        android:layout_toRightOf="@+id/txtNHS"
+        android:inputType="number"
+        android:layout_marginRight="25dp" />
+
+    <!-- CYP TextView and the TextEdit Box-->
+    <TextView
+        android:id="@+id/txtCYP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNHS"
+        android:layout_alignStart="@+id/txtNHS"
+        android:layout_below="@+id/txtNHS"
+        android:layout_marginTop="30dp"
+        android:text="@string/cyp_name"
+        android:textSize="24sp" />
+
+    <!-- DoB TextView and the TextEdit Box-->
+    <TextView
+        android:id="@+id/txtDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtCYP"
+        android:layout_alignStart="@+id/txtCYP"
+        android:layout_below="@+id/txtCYP"
+        android:layout_marginTop="30dp"
+        android:text="@string/dob"
+        android:textSize="24sp"/>
+
+    <!-- Date TextView and the Calendar selector-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtCYP"
+        android:layout_alignStart="@+id/txtCYP"
+        android:layout_below="@+id/txtDOB"
+        android:layout_marginTop="30dp"
+        android:text="@string/date"
+        android:textSize="24sp"
+        android:id="@+id/txtDate"/>
+    <EditText
+        android:id="@+id/editText_DATE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtDate"
+        android:layout_toRightOf="@+id/txtDate"
+        android:inputType="date"
+        android:layout_marginRight="25dp" />
+
+    <!-- Time TextView and the Time selector-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDate"
+        android:layout_alignStart="@+id/txtDate"
+        android:layout_below="@+id/txtDate"
+        android:layout_marginTop="30dp"
+        android:text="@string/time"
+        android:textSize="24sp"
+        android:id="@+id/txtTime"/>
+    <EditText
+        android:id="@+id/editText_TIME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtTime"
+        android:layout_toRightOf="@+id/txtTime"
+        android:inputType="time"
+        android:layout_marginRight="25dp" />
+
+    <!-- Reason TextView and the TextEdit Box-->
+    <TextView
+        android:id="@+id/txtReasonComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTime"
+        android:layout_alignStart="@+id/txtTime"
+        android:layout_below="@+id/txtTime"
+        android:layout_marginTop="30dp"
+        android:text="@string/reason_of_completing_this_form"
+        android:textSize="24sp" />
+
+
+    <!-- Additional Resources-->
+    <Button
+        android:id="@+id/btnSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Section By Section"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="btnSectionBySection" />
+
+    <Button
+        android:id="@+id/btnOverview"
+        android:layout_height="wrap_content"
+        android:text="Overview"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@+id/btnSection"
+        android:layout_alignBottom="@+id/btnSection"
+        android:layout_toStartOf="@+id/btnSection"
+        android:layout_width="wrap_content"
+        android:minWidth="120dp"
+        android:onClick="btnOverview" />
+
+    <EditText
+        android:id="@+id/editText_CYPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/txtCYP"
+        android:layout_toRightOf="@+id/txtCYP"
+        android:layout_marginRight="25dp" />
+
+    <EditText
+        android:id="@+id/editText_DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:layout_alignTop="@+id/txtDOB"
+        android:layout_toRightOf="@+id/txtDOB"
+        android:layout_marginRight="25dp"/>
+
+    <EditText
+        android:id="@+id/editText_REASONofCOMPLETING"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/txtReasonComplete"
+        android:layout_alignStart="@+id/txtReasonComplete" />
+
+</RelativeLayout>

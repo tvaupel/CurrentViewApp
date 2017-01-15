@@ -88,20 +88,25 @@ public class QuestionnaireMenu extends AppCompatActivity implements NavigationVi
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
-            System.exit(0);
+            Intent intent = new Intent(this, LoginScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            super.finish();
+            startActivity(intent);
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    public void btnOverview(View view){
-        Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
+    public void btnNext(View view){
+        Intent intent = new Intent(this, QuestionnaireDetails.class); // opens the questionnaire details activity
         startActivity(intent);
     }
-    public void btnSectionBySection(View view){
-        Intent intent = new Intent(this, Q1ToQ10.class); //opens the questionnaire activity
-        startActivity(intent);
+
+
+    public void resetQuestionnaires(){
+
+
     }
+
 
 }

@@ -76,7 +76,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             drawer.closeDrawer(GravityCompat.START);
 
         } else if (id == R.id.nav_new_questionnaire) {
-            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
+            Intent intent = new Intent(this, QuestionnaireDetails.class); //opens the Questionnaire Menu Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
@@ -88,7 +88,10 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
-
+            Intent intent = new Intent(this, LoginScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            super.finish();
+            startActivity(intent);
         }
 
         drawer.closeDrawer(GravityCompat.START);
@@ -97,7 +100,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
     // Button activity for Questionnaire Menu (generate new Questionnaire)
     public void btnNewQuestion(View view){
-        Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
+        Intent intent = new Intent(this, QuestionnaireDetails.class); //opens the Questionnaire Menu Activity
         startActivity(intent);
     }
 

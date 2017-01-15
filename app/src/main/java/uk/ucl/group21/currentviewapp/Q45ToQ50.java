@@ -103,10 +103,10 @@ public class Q45ToQ50 extends AppCompatActivity implements NavigationView.OnNavi
 
         } else if (id == R.id.nav_logout) {
             saveInput();
-
-            // popup window to ask for confirmation
-
-            System.exit(0);
+            Intent intent = new Intent(this, LoginScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            super.finish();
+            startActivity(intent);
         }
 
         drawer.closeDrawer(GravityCompat.START);
@@ -115,7 +115,7 @@ public class Q45ToQ50 extends AppCompatActivity implements NavigationView.OnNavi
 
 
     public void btnDoneQ45to50(View view) {
-        Intent intent = new Intent(this, QuestionnaireMenu.class); //diverts back to the Dashboard screen.
+        Intent intent = new Intent(this, QuestionnaireOverview.class); //diverts back to the Dashboard screen.
         startActivity(intent);
     }
 }
