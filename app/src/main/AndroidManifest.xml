@@ -78,6 +78,11 @@
             android:name=".QuestionnaireDetails"
             android:label="Questionnaire Details"
             android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuestionnaireOverview"
+            android:label="Questionnaire Overview"
+            android:launchMode="singleInstance"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 

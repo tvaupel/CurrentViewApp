@@ -71,12 +71,7 @@ public class QuestionnaireDetails extends AppCompatActivity implements Navigatio
                         if (isInserted) {
                             Toast.makeText(QuestionnaireDetails.this, "Data Inserted", Toast.LENGTH_LONG).show();
                             // If data insertion is successful
-                            ////////////////
-                            //////////////
-                            // OVERVIEW LINK
-                            //////////////
-                            ////////////////
-                            Intent real = new Intent(QuestionnaireDetails.this,Q1ToQ10.class); //opens the DatabaseMainActivity
+                            Intent real = new Intent(QuestionnaireDetails.this,QuestionnaireOverview.class); //opens the DatabaseMainActivity
                             startActivity(real);
                         }
                         else {
@@ -184,7 +179,7 @@ public class QuestionnaireDetails extends AppCompatActivity implements Navigatio
     }
 
     public void btnOverview(View view){
-        Intent intent = new Intent(this, QuestionnaireDetails.class); //opens the questionnaire activity
+        Intent intent = new Intent(this, QuestionnaireOverview.class); //opens the questionnaire activity
         startActivity(intent);
     }
     public void btnSectionBySection(View view){

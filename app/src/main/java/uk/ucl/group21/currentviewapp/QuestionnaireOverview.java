@@ -1,23 +1,22 @@
 package uk.ucl.group21.currentviewapp;
 
-import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class Q45ToQ50 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class QuestionnaireOverview extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q45_to_q50);
+        setContentView(R.layout.activity_questionnaire_overview);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -29,16 +28,8 @@ public class Q45ToQ50 extends AppCompatActivity implements NavigationView.OnNavi
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);}
-
-
-    ///////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////
-    public void saveInput() {
-        // Save the input of the questionnaire up till here
+        navigationView.setNavigationItemSelectedListener(this);
     }
-    ///////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////
 
 
     @Override
@@ -76,46 +67,30 @@ public class Q45ToQ50 extends AppCompatActivity implements NavigationView.OnNavi
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
         int id = item.getItemId();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         if (id == R.id.nav_dashboard) {
-            //save the current questionnaire inputs!
-            saveInput();
-
             Intent intent = new Intent(this, Dashboard.class); //opens the Dashboard Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_new_questionnaire) {
-            saveInput();
-            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens a New Questionnaire Activity
+            Intent intent = new Intent(this, QuestionnaireMenu.class); //opens the Questionnaire Menu Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_previous_questionnaire) {
-            saveInput();
             Intent intent = new Intent(this, PreviousQuestionnaires.class); //opens the Previous Questionnaire Activity
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {
-            saveInput();
-            Intent intent = new Intent(this, Help.class); //opens the Dashboard Activity
-            startActivity(intent);
+            drawer.closeDrawer(GravityCompat.START);
 
         } else if (id == R.id.nav_logout) {
-            saveInput();
-            Intent intent = new Intent(this, LoginScreen.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            super.finish();
-            startActivity(intent);
+
         }
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-
-    public void btnDoneQ45to50(View view) {
-        Intent intent = new Intent(this, QuestionnaireOverview.class); //diverts back to the Dashboard screen.
-        startActivity(intent);
     }
 }

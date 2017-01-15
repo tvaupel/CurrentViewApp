@@ -10,3 +10,5 @@ gradle/
 .idea/misc.xml
 /build
 out/
+gen/
+projectFilesBackup/
